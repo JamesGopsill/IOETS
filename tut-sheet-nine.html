@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Online Engineering Tutorial Sheets - Tutorial Sheet Nine</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link href="style.css" rel="stylesheet">
+
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+         showProcessingMessages: false,
+        tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
+      });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <h3><a href="index.html">Interactive Online Tutorial Sheets</a></h3>
+  <hr>
+  <h1>Tutorial Sheet Nine <small>Moments of Inertia</small></h1>
+
+  <!-- QUESTION ONE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q1:</b> An electric motor supplies a power of $200W$ to drive an unloaded flywheel of moment of inertia $2kgm^2$ at a steady speed of $600revmin^{-1}$. How long will it be before the flywheel comes to rest after the power is switched off assuming the frictional couple reamins constant?</p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-9-1-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-9-1-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-9-1-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-9-1-1"><p class="lead"> $Power = Torque \times Speed$ </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-9-1-2"><p class="lead"> $T=I\theta$ </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-9-1-3"><p class="lead"> $V = u + at$ </p></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION TWO -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q2:</b> A figure skater is spinning about a vertical axis with his arms extended vertically upwards. Will he spin faster or slower when he allows his arms to fall until they are horizontal? Has his kinetic energy increases or decreased? How do you account for the change? <br /><br />A horizontal disc rotating freely about a vertical axis has a speed of $90revmin^{-1}$. A small piece of putty of mass $0.02kg$ falls vertically on to the disc and sticks to it at a distance of $50mm$ from the axis. If the speed is thereby reduced to $80revmin^{-1}$ calculate the moment of inertia of the disc.</p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-9-2-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-9-2-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-9-2-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-9-2-1"><p class="lead"> $Momentum = I\omega$ </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-9-2-2"><p class="lead"> Does the skater put in energy when he/she lifts or lowers their arms? </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-9-2-3"><p class="lead"> Initial Momentum $= I_1\omega_1$ <br /> Final Momentum $= (I_1+mr^2)\omega_2$</p></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION THREE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q3:</b> The flywheel shown in the figure is acted on a by roller which produces a force of $10N$. What is the angular acceleration? Assume that 90% of the flywheel mass lies in the rim at a radius of $0.275m$ and the total mass is 10kg. <br /><br /> How fast must the flywheel rotate in order to store 50 Joules of energy? What is the rim speed and how long does it take to raise the flywheel to speed?</p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-9-3-1.png" class="img-thumbnail">
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-9-3-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-9-3-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-9-3-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-9-3-1"><p class="lead"> Approximate Inertia $=0.9Mr^2$ </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-9-3-2"><p class="lead"> Find the torques and kinetic energy of the rotating disc </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-9-3-3"><p class="lead"> Calculate the angular speed for 50 Joules and then calculate rim speed. Use constant acceleration equations to find time the raise the speed.</p></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION FOUR -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q4:</b> A drum is driven by a rope of length $20m$. If the diameter of the drum is $0.5m$ and its moment of inertia about the centre of gravity os $0.1kgm^2$ what is its maximum speeds if the tension in the rope is $10N$?</p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-9-4-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-9-4-2')" class="btn btn-success">Hint Two</button>
+        <!-- <button onclick="revealHint('hint-9-4-3')" class="btn btn-success">Hint Three</button> -->
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-9-4-1"><p class="lead">Work Done = Force $\times$ Distance </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-9-4-2"><p class="lead">Final kinetic Energy = $I\omega^2$ </p></span></td>
+          </tr>
+          <!-- <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution" id="hint-9-4-3"><p class="lead"> </p></span></td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION FIVE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q5:</b> Determine from first principles the moment of inertia of a thin plate of mass per unit area $\rho t$, cut into a triangular shape as shown, about an axis passing through the apex and parallel to the base. What is the corresponding radius of gyration?</p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-9-5-1.png" class="img-thumbnail">
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-9-5-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-9-5-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-9-5-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-9-5-1"><p class="lead">$I = \int x^2 \mathrm d m$ </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-9-5-2"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-9-5-2.png" class="img-thumbnail"></div>
+            <p class="lead">Work out: Mass of Element ($\mathrm d m$) in terms of $x \mathrm d x$</p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-9-5-3"><p class="lead">$I = \int x^3 \rho \frac{tb}{h} \mathrm d x$ </p></p></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION SIX -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q6:</b> The pendulum of a clock is made from a circular steel bar of $10mm$ diameter and length $250mm$. On its end is a $50mm$ cube of steel. If the density of steel is $7850kgm^{-3}$ what is the pendulum moment of inertia if it is pivoted about one end? The inertia of a uniform rod, through the centre of gravity is $\frac{ml^2}{12}$. If the pendulum amplitude is $15$ degrees and the maximum potential energy during the stroke is $0.1J$ what is the pendulum mid stroke angular velocity?</p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-9-6-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-9-6-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-9-6-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-9-6-1"><p class="lead">$m = \frac{\rho\pi D^2 L}{4}$ </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-9-6-2"><p class="lead"> $I = \frac{ml^2}{12}$ </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-9-6-3"><p class="lead"> $I_{\mathrm{hinge}} = I_{\mathrm{centre of gravity}} + mx^2$ </p></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION SEVEN -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q7:</b> The figure shows a load L of mass $12kg$ being lifted by a light cable which passes a number of times around a drum D of radius $0.26m$ and thence to the piston P of an air cylinder. The radius of gyration of the drum is $0.2m$. The mass of the drum is $15kg$ and the mass of the piston is $8kg$. The force of air on the piston is $210N$; the frictional force on the piston is $5N$ and the frictional torque on the drum is $13Nm$. Draw free body diagrams for L, D and P and hence determine the angular acceleration of the drum.</p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-9-7-1.png" class="img-thumbnail">
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-9-7-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-9-7-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-9-7-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints (Scroll)</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-9-7-1"><p class="lead"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-9-7-2.png" class="img-thumbnail"> </div> </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-9-7-2"><p class="lead"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-9-7-3.png" class="img-thumbnail"> </div> </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-9-7-3"><p class="lead"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-9-7-4.png" class="img-thumbnail"> </div></p></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr>
+  <footer>
+    <p class="text-muted">Interactive Online Tutorial Sheets - 2014</p>
+  </footer>
+</div>
+
+<!-- ##################################### -->
+
+<script type="text/javascript">
+function revealHint(hint) {
+  document.getElementById(hint).className = 'solution';
+}
+</script>
+
+</body>

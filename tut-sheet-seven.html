@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Online Engineering Tutorial Sheets - Tutorial Sheet Seven</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link href="style.css" rel="stylesheet">
+
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+         showProcessingMessages: false,
+        tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
+      });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <h3><a href="index.html">Interactive Online Tutorial Sheets</a></h3>
+  <hr>
+  <h1>Tutorial Sheet Seven <small>Stress-Strain Two</small></h1>
+  <!-- QUESTION ONE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q1:</b> A rubber block ($100 mm \times 100 mm \times 40 mm$) is attached to two steel plates as shown in figure Q1. The rubber has a Young’s modulus of $E = 10 MPa$ and a Poisson’s ratio of $v = 0.5$. Estimate the shear modulus of the rubber. The lower plate is held fixed (in a horizontal plane) and a horizontal force of 4 kN is applied to the upper plate. How far does this plate move?</p>
+      <hr />
+      <img alt="Figure 1.1" src="images/ts-7-1.png" class="img-thumbnail">
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-7-1-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-7-1-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-7-1-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-7-1-1">$ G = \frac{E}{2(1+v)} $</span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-7-1-2">$ \gamma = \frac{\tau}{G} = \frac{F}{GA} $</span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-7-1-3">$ d = h\tan\gamma \simeq h\gamma $</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION TWO -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q2:</b> The bridge pillar shown (schematically) in figure Q2 supports a vertical load of $ 3MN $. Determine the total volume of concrete in the pillar if its density is $ \rho = 2400 kg m^{−3} $, and the allowable compressive stress is limited to $ 1 MPa $. What would be the volume of a column of constant cross-section designed under the same conditions?</p>
+      <hr />
+      <img alt="Figure 1.1" src="images/ts-7-2.png" class="img-thumbnail">
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-7-2-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-7-2-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-7-2-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-7-2-1">Upper Block: $ stress = \frac{P + \rho ghA_1}{A_1} = M $</span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-7-2-2">Lower Block: $ stress = \frac{P + \rho ghA_1 + \rho gh A_2}{A_2} = M $</span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-7-2-3">$ stress = \frac{P + \rho g(2h)A}{A} = M $</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION THREE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q3:</b><br />(i) Part (a) of figure Q3 shows an element in equilibrium within a block. If the rest of the block exerts a shear stress τyx on the element as shown, show that it must also exert a shear stress of the same magnitude on the left and right vertical sides. <br /><br /> (ii) Part (b) of figure Q3 shows a cuboid of a rubber material subject to direct forces of 360 N acting on two side faces and a shear force of 180 N acting across the top face. The base of the block is held fixed. By considering the forces and stresses acting on elements of the form shown in parts (c) and (d) of the figure, determine the stresses associated with the diagonal planes EBCH and AFGD. (The length of the base of each element is twice its height so that its sloping face is parallel to the appropriate diagonal plane.) In each case find the direct stress acting in the material in a direction perpendicular to the plane, and the shear stress acting parallel to the plane.
+ </p>
+      <hr />
+      <img alt="Figure 1.1" src="images/ts-7-3.png" class="img-thumbnail">
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-7-3-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-7-3-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-7-3-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One (for part (i))</label></td>
+            <td><span class="solution-hidden" id="hint-7-3-1"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-7-3-2.png" class="img-thumbnail"></div></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two (for part (ii))</label></td>
+            <td><span class="solution-hidden" id="hint-7-3-2"><img alt="Figure 1.1" src="images/ts-7-3-3.png" class="img-thumbnail"></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-7-3-3"><img alt="Figure 1.1" src="images/ts-7-3-4.png" class="img-thumbnail"></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION FOUR -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q4:</b>The state of stress of an element of material is such that: a stress $\sigma_x$ is exerted in one direction, lateral contraction is free to occur in a second (y) direction, but is completely prevented in a third (z) direction. If the Young’s modulus and Poisson’s ratio for the material are $E$ = 200 GPa and $v = 0.3$ respectively, calculate the values of the applied stresses ($\sigma_x$ and $\sigma_y$ ) such that strain is $ \epsilon_x = 0.001 $. What then is the value of the strain $\epsilon_y$ in the y-direction?</p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-7-4-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-7-4-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-7-4-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-7-4-1"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-7-4-1.png" class="img-thumbnail"></div></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-7-4-2"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-7-4-2.png" class="img-thumbnail"></div></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-7-4-3"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-7-4-3.png" class="img-thumbnail"></div></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION FIVE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q5:</b>A cuboid of material is subject to a hydrostatic stress (that is, it is underwater and subject to the pressure of the water). The volumetric strain εvol is defined as the change in volume divided by the original volume. Show that:
+      <br/>
+      <div style="text-align:center">$\epsilon_{vol} = \epsilon_x + \epsilon_y + \epsilon_z $</div>
+      Hence, for a specimen of material subjected to a uniform hydrostatic pressure of magnitude p, show that the volumetric strain of the material is:
+      <br/>
+      <div style="text-align:center">$\epsilon_{vol} = -\frac{3p(1 − 2v)}{E}$</div>
+      where $E$ is the Young’s modulus of the material and $v$ its Poisson’s ratio.
+      <br /></p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-7-5-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-7-5-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-7-5-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-7-5-1"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-7-5-2.png" class="img-thumbnail"></div></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-7-5-2"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-7-5-3.png" class="img-thumbnail"></div></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-7-5-3"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-7-5-4.png" class="img-thumbnail"></div></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION SIX -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q6:</b> The component illustrated in figure Q6 consists of a steel rod of cross-sectional area $600mm^2$ coaxially surrounded by a copper tube of cross-sectional area $1200mm^2$. It is not subjected to any external load and there is no internal stress at $20^{\circ}C$. If its temperature is changed from $20^{\circ}C$ to $100^{\circ}C$, determine the axial stresses set up in the copper and the steel.<br />
+      For Steel: $E = 205 GPa, \alpha = 11 \times 10^{−6} K^{−1}$ <br />
+      For Copper: $E = 115 GPa, \alpha = 16 \times 10^{−6} K^{−1}$
+      <br /></p>
+      <hr />
+      <div style="text-align:center"><img alt="Figure 1.1" src="images/ts-7-6.png" class="img-thumbnail"></div>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-7-6-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-7-6-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-7-6-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-7-6-1"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-7-6-2.png" class="img-thumbnail"></div></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-7-6-2"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-7-6-3.png" class="img-thumbnail"></div></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-7-6-3"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-7-6-4.png" class="img-thumbnail"></div></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION SIX -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q7:</b>Two circular tubes both of length $2000mm$ are fixed together (one inside the other) at their ends as shown in figure Q7. This is when each tube has temperature $T$ and the tubes are unstressed. A temperature difference is then created by raising the temperature of one end to $(T + 100)^{\circ}C$. Find the stress in the copper tube.
+      <br /></p>
+      <hr />
+      <div style="text-align:center"><img alt="Figure 1.1" src="images/ts-7-8-1.png" class="img-thumbnail"></div>
+      <div style="text-align:center"><img alt="Figure 1.1" src="images/ts-7-8-2.png" class="img-thumbnail"></div>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-7-7-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-7-7-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-7-7-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-7-7-1"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-7-7-3.png" class="img-thumbnail"></div></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-7-7-2"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-7-7-4.png" class="img-thumbnail"></div></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-7-7-3"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-7-7-5.png" class="img-thumbnail"></div></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr>
+  <footer>
+    <p class="text-muted">Interactive Online Tutorial Sheets - 2014</p>
+  </footer>
+</div>
+
+<!-- ##################################### -->
+
+<script type="text/javascript">
+function revealHint(hint) {
+  document.getElementById(hint).className = 'solution';
+}
+</script>
+
+</body>

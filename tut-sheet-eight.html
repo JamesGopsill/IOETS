@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Online Engineering Tutorial Sheets - Tutorial Sheet Eight</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link href="style.css" rel="stylesheet">
+
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+         showProcessingMessages: false,
+        tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
+      });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <h3><a href="index.html">Interactive Online Tutorial Sheets</a></h3>
+  <hr>
+  <h1>Tutorial Sheet Eight <small>Torsion</small></h1>
+  <div class="row" style="text-align:center">
+    <table class="table table-striped table-condensed">
+      <thead>
+        <tr>
+                <th></th>
+                <th>Density ($\rho$) <br/> $kg m^{-3}$</th>
+                <th>Young's Modulus ($E$) <br/> $GPa$</th>
+                <th>Poisson's Ratio ($v$)</th>
+                <th>Shear Modulus ($G$) <br /> $GPa$</th>
+                <th>Yield Strength <br /> $MPa$</th>
+                <th>UTS <br /> $MPa$</th>
+                <th>Coeff of lin thm exp ($\alpha$) <br /> $10^{-6}K^{-1}$</th>
+              </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Steel</td>
+          <td>7850</td>
+          <td>210</td>
+          <td>0.3</td>
+          <td>80</td>
+          <td>220</td>
+          <td>430</td>
+          <td>11</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+  </div>
+  <!-- QUESTION ONE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q1:</b> A solid steel shaft has a diameter of 150 mm and transmits a torque of 50 kNm. Calculate the maximum shear stress in the shaft and the angle of twist over a length of 3m.</p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-8-1-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-8-1-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-8-1-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-8-1-1"><p class="lead"> $ J = \frac{\pi}{32}d^4 $ </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-8-1-2"><p class="lead"> $ \tau_{max} = \frac{T}{J}\frac{d}{2} $ </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-8-1-3"><p class="lead"> $ \theta = \frac{TL}{GJ}$ </p></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION TWO -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q2:</b> A hollow steel shaft having an external diameter of 150 mm is to transmit a torque of 26.5 kNm. What should be the internal diameter so that the maximum shear stress is 50 MPa?</p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-8-2-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-8-2-2')" class="btn btn-success">Hint Two</button>
+        <!-- <button onclick="revealHint('hint-8-2-3')" class="btn btn-success">Hint Three</button> -->
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-8-2-1"><p class="lead">$ r = \frac{Tr}{\tau_{limit}}$ </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-8-2-2"><p class="lead">$ J = \frac{\pi}{32}(d_2^4 - d_1^4)$</p></span></td>
+          </tr>
+          <!-- <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution" id="hint-8-2-3">$ $</span></td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION THREE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q3:</b> A turbo-generator (figure Q3) has an output of 20 MW at $3000 rev min^{−1}$. The efficiency of the generator is 95%. The hollow steel shaft coupling the turbine to the generator has an external diameter of 180 mm and an internal diameter of 100 mm. Determine the maximum shear stress in the shaft.</p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-8-3-1.png" class="img-thumbnail">
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-8-3-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-8-3-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-8-3-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-8-3-1"><p class="lead"> $\omega$ in $rads^{-1}$ </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-8-3-2"><p class="lead"> $ T = \frac{P_t}{\omega} $ </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-8-3-3"><p class="lead"> $\tau_{max} = \frac{Td_2}{2J}$ </p></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION FOUR -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q4:</b> A generator (figure Q4) is driven through a 6 : 1 reduction gear-box by an air turbine which runs at 18000 rev min−1. The turbine develops 40 kW and the gear box losses can be neglected. The generator shaft is hollow and the turbine shaft is solid. Each is 150 mm long and is made of steel for which the maximum working shear stress is limited to 60 MPa. The angle of twist of the generator shaft must not exceed $0.5^{\circ}$. Calculate the inside and outside diameters of the generator shaft and the diameter of the turbine shaft.</p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-8-4-1.png" class="img-thumbnail">
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-8-4-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-8-4-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-8-4-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-8-4-1"><p class="lead"> Calculate the Torque for both the generator and turbine shafts (Note: they will be different)</p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-8-4-2"><p class="lead text-center"> $J_t = \frac{\pi}{32}d^4_t = \frac{T_td_t}{2\tau_{limit}}$</p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-8-4-3"><p class="lead text-center">$R_g = \frac{\tau_{limit}L}{G\theta_g}$</p></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION FIVE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q5:</b> The stepped steel shaft shown in figure Q5 carries a torque T acting at one end as shown. If the shaft consists of two solid circular sections with the diameters shown, determine the maximum value of $T$ when the (maximum) allowable shear stress is 14 MPa and the rotation of the free end is limited to $3.5^{\circ}$.</p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-8-5-1.png" class="img-thumbnail">
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-8-5-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-8-5-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-8-5-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-8-5-1"><p class="lead text-center">$ T \leq \frac{2J_1\tau_{limit}}{d_1}$</p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-8-5-2"><p class="lead text-center">$\theta = (\frac{L}{JG})T$</p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-8-5-3"><p class="lead text-center">$\theta_1+\theta_2 = (\frac{L_1}{J_1G}+\frac{L_2}{J_2G})T \leq \frac{3.5\pi}{180}$</p></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION SIX -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q6:</b><br/>A marine diesel engine which develops 30 kW at $3000 rev min^{−1}$, drives a propeller through a 3 : 1 reduction gearbox. If the efficiency of the gearbox is 85%, determine the minimum diameter of the propeller drive shaft, if the (maximum) allowable shear stress in the material used for the shaft is 70 MPa. <br />
+When used to go astern (i.e. in reverse), a 5 : 1 reduction gear is used. Assuming an efficiency of 75% and the same value of (maximum) allowable shear stress as given above, what is the minimum shaft diameter to satisfy both forward and backward conditions?</p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-8-6-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-8-6-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-8-6-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-8-6-1"><p class="lead">Calculate Engine Power, Engine Angular, Prop Power &amp; Propeller Angle Speed<p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-8-6-2"><p class="lead text-center">$ \frac{2\tau_{max}}{d_p} = \frac{T_p}{J_p}$</p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-8-6-3"><p class="lead text-center">$d^3_p = \frac{16T_p}{\pi\tau_{max}}$</p></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr>
+  <footer>
+    <p class="text-muted">Interactive Online Tutorial Sheets - 2014</p>
+  </footer>
+</div>
+
+<!-- ##################################### -->
+
+<script type="text/javascript">
+function revealHint(hint) {
+  document.getElementById(hint).className = 'solution';
+}
+</script>
+
+</body>

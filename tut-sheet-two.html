@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Online Engineering Tutorial Sheets - Tutorial Sheet Two</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link href="style.css" rel="stylesheet">
+
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+         showProcessingMessages: false,
+        tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
+      });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <h3><a href="index.html">Interactive Online Tutorial Sheets</a></h3>
+  <hr>
+	<h1>Tutorial Sheet Two <small>Pin-Jointed Structures</small></h1>
+	<!-- QUESTION ONE -->
+	<div class="row">
+		<div class="col-md-6">
+			<p><b>Q1:</b> For the pin-jointed frame shown in figure Q1, find: the greatest compression load; the greatest tension load; the largest force in a diagonal member.</p>
+			<p>Note: Use T_{AB} in the maths formula to get $T_{AB}$. And all equations need to refer to the member you're trying to solve for. E.g. $T_{BC} = ...$</p>
+			<hr />
+			<img alt="Figure 1.1" src="images/ts-2-1.png" class="img-thumbnail">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="questionOne" >
+			</div>
+			<p class="" id="questionOneResult"></p>
+			<div class="form-group">
+				<button onclick="generateEquation('questionOne','previewOne')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('questionOne')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewOne">Preview: $F = ma$</p>
+			<p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+		</div>
+
+		<div class="col-md-6 right-col">
+			<table class="table table-striped table-condensed">
+				<thead>
+         			<tr>
+            		<th></th>
+            		<th>Working</th>
+          		</tr>
+        		</thead>
+        		<tbody>
+					<tr>
+						<td><label>$T_{AB}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-1'>$ -1 + T_{AB}\sin45 = 0  $ <br /> $\therefore T_{AB} = \sqrt{2} $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{AC}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-2'>$ T_{AC} + T_{AB}\cos45 = 0 $ <br /> $\therefore T_{AC} = -1 $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{BC}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-3'>$ T_{BC} + T_{AB}\sin45 = 0 $ <br /> $\therefore T_{BC} = -1 $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{BD}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-4'>$ T_{BD} - T_{AB}\cos45 = 0 $ <br /> $\therefore T_{BD} = 1 $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{CD}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-5'>$ T_{BC} + T_{CD}\sin45 = 0 $ <br /> $\therefore T_{CD} = \sqrt{2} $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{CE}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-6'>$ -T_{AC} - T_{CE} - T_{CD}\cos45 = 0 $ <br /> $\therefore T_{CE} = -2 $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{DE}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-7'>$ T_{DE} + T_{CD}\sin45 = 0 $ <br /> $\therefore T_{DE} = -1 $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{DF}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-8'>$ T_{DF} - T_{BD} - T_{CD}\cos45 = 0 $ <br /> $\therefore T_{DF} = 2 $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{EF}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-9'>$ T_{DE} + T_{EF}\sin45 = 0 $ <br /> $\therefore T_{EF} = \sqrt{2} $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{EG}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-10'>$ - T_{CE} - T_{EG} - T_{CD}\cos45 = 0 $ <br /> $\therefore T_{EG} = -3 $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{FG}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-11'>$ T_{FG} + T_{EF}\sin45 = 0 $ <br /> $\therefore T_{FG} = \sqrt{2} $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{FH}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-12'>$ T_{FH} - T_{DF} - T_{EF}\cos45 = 0 $ <br /> $\therefore T_{FH} = 3 $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{GH}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-13'>$ T_{FG} + T_{GH}\sin45 = 0 $ <br /> $\therefore T_{GH} = \sqrt{2} $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{GI}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-14'>$ - T_{EG} I T_{GI} + T_{GH}\cos45 = 0 $ <br /> $\therefore T_{GI} = -4 $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{HI}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-15'>$ T_{HI} + T_{GH}\sin45 = 0 $ <br /> $\therefore T_{HI} = -1 $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{HJ}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-16'>$ T_{HJ} - T_{FH} - T_{GH}\cos45 = 0 $ <br /> $\therefore T_{HJ} = 4 $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{IJ}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-17'>$ T_{HI} + T_{IJ}\sin45 = 0 $ <br /> $\therefore T_{IJ} = \sqrt{2} $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{FH}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-18'>$ - T_{GI} - T_{IK} + T_{IJ}\cos45 = 0 $ <br /> $\therefore T_{IK} = -5 $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{JK}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-19'>$ T_{JK} + T_{IJ}\sin45 = 0 $ <br /> $\therefore T_{JK} = -1 $</span></td>
+					</tr>
+					<tr>
+						<td>$T_{JL}$</td>
+						<td><span class="solution-hidden" id='solution-1-20'>$ T_{JL} - T_{HJ} - T_{IJ}\cos45 = 0 $ <br /> $\therefore T_{JL} = 5 $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{KL}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-21'>$ T_{JK} + T_{KL}\sin45 = 0 $ <br /> $\therefore T_{KL} = \sqrt{2} $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{KM}$</label></td>
+						<td><span class="solution-hidden" id='solution-1-22'>$ - T_{IK} - T_{KM} + T_{KL}\cos45 = 0 $ <br /> $\therefore T_{KM} = -5 $</span></td>
+					</tr>
+					<tr>
+						<td><label>$ P $</label></td>
+						<td><span class="solution-hidden" id='solution-1-23'>$ T_{KL} - P = 0 $ <br /> $\therefore P = 1 $</span></td>
+					</tr>
+					<tr>
+						<td>$ Q $</td>
+						<td><span class="solution-hidden" id='solution-1-24'>$ Q - T_{JL} - T_{KL}\cos45 = 0 $ <br /> $\therefore Q = 6 $</span></td>
+					</tr>
+					<tr>
+						<td><label>$ T_{LM} $</label></td>
+						<td><span class="solution-hidden" id='solution-1-25'>$ T_{LM} = 0 $</span></td>
+					</tr>
+					<tr>
+						<td><label>$ R $</label></td>
+						<td><span class="solution-hidden" id='solution-1-26'>$ -R - T_{KM} = 0 $ <br /> $\therefore R = 6 $</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<hr />
+	<!-- QUESTION TWO -->
+	<div class="row">
+		<div class="col-md-6">
+			<p><b>Q2:</b> The framework shown in figure Q2 is used to support a steel car body of mass 200kg. Calculate the support reactions and the forces in members AB, BF and EF.</p>
+			<hr />
+			<img alt="Figure 1.1" src="images/ts-2-2-edit.png" class="img-thumbnail">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="questionTwo" >
+			</div>
+			<p class="" id="questionTwoResult"></p>
+			<div class="form-group">
+				<button onclick="generateEquation('questionTwo','previewTwo')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('questionTwo')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewTwo">Preview: $F = ma$</p>
+			<p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+		</div>
+		<div class="col-md-6 right-col">
+			<table class="table table-striped table-condensed">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Working</th>
+					</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td><label>at D</label></td>
+					<td><span class="solution-hidden" id="solution-2-1">$ T_{DE}\sin\alpha + W = 0 $</span></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><span class="solution-hidden" id="solution-2-2">$ T_{DE}\cos\alpha + T_{CD} = 0 $</span></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><span class="solution-hidden" id="solution-2-3">$ T_{DE} = \frac{-W}{\sin\alpha} = -1.80W = 3537N $</span></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><span class="solution-hidden" id="solution-2-4">$ T_{CD} = − T_{DE}\cos\alpha = (\frac{3}{2})W = 2943N $</span></td>
+				</tr>
+				<tr>
+					<td><label>at C</label></td>
+					<td><span class="solution-hidden" id="solution-2-5">$ T_{BC} = T_{CD} = (\frac{3}{2})W = 2943N $</span></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><span class="solution-hidden" id="solution-2-6">$ T_{CE} = 0 $</span></td>
+				</tr>
+				<tr>
+					<td><label>at E</label></td>
+					<td><span class="solution-hidden" id="solution-2-7">$ T_{BE} = 0 $</span></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><span class="solution-hidden" id="solution-2-8">$ T_{EF} = T_{DE} = 3537 N $</span></td>
+				</tr>
+				<tr>
+					<td><label>at B</label></td>
+					<td><span class="solution-hidden" id="solution-2-9">$ T_{AB} = T_{BC} = (3/2)W = 2943N $</span></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><span class="solution-hidden" id="solution-2-10">$ T_{BF} = 0 $</span></td>
+				</tr>
+				<tr>
+					<td><label>at F</label></td>
+					<td><span class="solution-hidden" id="solution-2-11">$ T_{AF} = 0 $</span></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><span class="solution-hidden" id="solution-2-12">$ T_{FG} = T_{EF} = −W\sqrt{\frac{13}{2}} = 3537N $</span></td>
+				</tr>
+				<tr>
+					<td><label>at G</label></td>
+					<td><span class="solution-hidden" id="solution-2-13">$ R = T_{FG}\cos\alpha = (\frac{3}{2})W = 2943N $</span></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><span class="solution-hidden" id="solution-2-14">$ T_{AG} = −T{FG}\sin\alpha = W = 1962N $</span></td>
+				</tr>
+				<tr>
+					<td><label>at A</label></td>
+					<td><span class="solution-hidden" id="solution-2-15">$ Q = T_{AB} = (\frac{3}{2})W = 2943N $</span></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><span class="solution-hidden" id="solution-2-16">$ P = T_{AG} = W = 1962N $</span></td>
+				</tr>
+				<tr>
+					<td><label></label></td>
+					<td><span class="solution-hidden" id="solution-2-17">$ P = W = 1962N $</span></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><span class="solution-hidden" id="solution-2-18">$ Q=R =(\frac{3}{2})W = 2943N $</span></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><span class="solution-hidden" id="solution-2-19">$ 6R = 9W $</span></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!-- QUESTION Three -->
+	<div class="row">
+		<div class="col-md-6">
+			<p><b>Q3:</b> Find the support reactions and the forces in the framework shown in figure Q3. The three support reactions are P, Q and R.</p>
+			<hr />
+			<img alt="Figure 1.1" src="images/ts-2-3.png" class="img-thumbnail">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="questionThree" >
+			</div>
+			<p class="" id="questionThreeResult"></p>
+			<div class="form-group">
+				<button onclick="generateEquation('questionThree','previewThree')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('questionThree')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewThree">Preview: $F = ma$</p>
+			<p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+		</div>
+		<div class="col-md-6">
+			<table class="table table-striped table-condensed">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Working</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><label>Resolve Horizontally</label></td>
+						<td><span class="solution-hidden" id="solution-3-1">$ Q = 0 $</span></td>
+					</tr>
+					<tr>
+						<td><label>Resolve Vertically</label></td>
+						<td><span class="solution-hidden" id="solution-3-2">$ P - W + W - R = 0 $</span></td>
+					</tr>
+					<tr>
+						<td><label>Moments about A</label></td>
+						<td><span class="solution-hidden" id="solution-3-3">$ W − 3W + 4R = 0 $</span></td>
+					</tr>
+					<tr>
+						<td><label>Therefore:</label></td>
+						<td><span class="solution-hidden" id="solution-3-4">$ P = R = \frac{1}{2}W $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{AB}$</label></td>
+						<td><span class="solution-hidden" id="solution-3-5">$ T_{AB} + P\cos45 = 0 $ <br /> $\therefore T_{AB}= -\frac{W}{2\sqrt{2}} $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{AF}$</label></td>
+						<td><span class="solution-hidden" id="solution-3-6">$ T_{AF} - P\sin45 = 0 $ <br /> $\therefore T_{AF}= \frac{W}{2\sqrt{2}} $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{BF}$</label></td>
+						<td><span class="solution-hidden" id="solution-3-7">$ W + T_{AB}\cos45 + T_{BF} = 0  $ <br /> $ T_{BF}=-\frac{3}{4}W $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{BC}$</label></td>
+						<td><span class="solution-hidden" id="solution-3-8">$ -T_{AB}\sin45 + T_{BC} = 0  $ <br /> $ T_{BC} = -\frac{W}{4} $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{CF}$</label></td>
+						<td><span class="solution-hidden" id="solution-3-9">$ T_{BF}+T_{AF}\cos45 + T_{CF}\cos45 = 0 $ <br /> $ T_{CF} = \frac{W}{\sqrt{2}} $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{EF}$</label></td>
+						<td><span class="solution-hidden" id="solution-3-10">$ -T_{AF}\sin45  + T_{CF}\sin45 + T_{EF} = 0 $ <br /> $ T_{EF} = -\frac{W}{4}  $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{DE}$</label></td>
+						<td><span class="solution-hidden" id="solution-3-11">$ T_{DE}\sin45 - T_{EF} = 0 $ <br /> $ T_{DE} = -\frac{W}{2\sqrt{2}} $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{CE}$</label></td>
+						<td><span class="solution-hidden" id="solution-3-12">$ T_{CE} + T_{DE}\cos45 = 0 $ <br /> $ T_{CE} = \frac{W}{4} $</span></td>
+					</tr>
+					<tr>
+						<td><label>$T_{CD}$</label></td>
+						<td><span class="solution-hidden" id="solution-3-13">$ T_{DE}\cos45 + T_{CD}\cos45 = 0 $ <br /> $ T_{CD} = \frac{W}{2\sqrt{2}} $</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!-- QUESTION Four -->
+	<div class="row">
+		<div class="col-md-6">
+			<p><b>Q4: Find the internal forces in the pin-jointed structure shown in figure Q4.</b></p>
+			<hr />
+			<img alt="Figure 1.1" src="images/ts-2-4-edit.png" class="img-thumbnail tall-img">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="questionFour" >
+			</div>
+			<p class="" id="questionFourResult"></p>
+			<div class="form-group">
+				<button onclick="generateEquation('questionFour','previewFour')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('questionFour')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewFour">Preview: $F = ma$</p>
+			<p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+		</div>
+		<div class="col-md-6">
+			<table class="table table-striped table-condensed">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Working</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><label>Resolving at B (horizontal)</label></td>
+						<td><span class="solution-hidden" id="solution-4-1">$ T_{AB}\cos\alpha + T_{BD}\cos\beta = 0 $</span></td>
+					</tr>
+					<tr>
+						<td><label>Resolving at B (vertical)</label></td>
+						<td><span class="solution-hidden" id="solution-4-2">$ T_{AB}\sin\alpha + T_{BD}\sin\beta - T_{BC} = 0 $</span></td>
+					</tr>
+					<tr>
+						<td><label></label></td>
+						<td><span class="solution-hidden" id="solution-4-3">$ \frac{3}{5}T_{AB} + \frac{3}{6}T_{BD} = 0 $</span></td>
+					</tr>
+					<tr>
+						<td><label></label></td>
+						<td><span class="solution-hidden" id="solution-4-4">$ \frac{4}{5}T_{AB} + \frac{5.2}{6}T_{BD} = -92 $</span></td>
+					</tr>
+					<tr>
+						<td><label></label></td>
+						<td><span class="solution-hidden" id="solution-4-5">$ T_{BD} = -\frac{6}{5}T_{AB} $</span></td>
+					</tr>
+					<tr>
+						<td><label></label></td>
+						<td><span class="solution-hidden" id="solution-4-6">$ T_{AB} = -50 $</span></td>
+					</tr>
+					<tr>
+						<td><label></label></td>
+						<td><span class="solution-hidden" id="solution-4-7">$ T_{BD} = 60 $</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		</div>
+	<!-- Question Five -->
+	<div class="row">
+		<div class="col-md-6">
+			<p><b>Q5: Find the internal forces in the pin-jointed structure shown in figure Q5</b></p>
+			<hr />
+			<img alt="Figure 1.1" src="images/ts-2-5-edit.png" class="img-thumbnail tall-img">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="questionFive" >
+			</div>
+			<p class="" id="questionFiveResult"></p>
+			<div class="form-group">
+				<button onclick="generateEquation('questionFive','previewFive')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('questionFive')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewFive">Preview: $F = ma$</p>
+			<p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+		</div>
+		<div class="col-md-6">
+			<table class="table table-striped table-condensed">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Working</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><label>Resolving at C (horizontal)</label></td>
+						<td><span class="solution-hidden" id="solution-5-1">$ - T_{BC}\cos\beta - T_{CD}\cos\gamma + 1 = 0 $</span></td>
+					</tr>
+					<tr>
+						<td><label>Resolving at C (vertical)</label></td>
+						<td><span class="solution-hidden" id="solution-5-2">$ T_{BC}\sin\beta - T_{CD}\sin\gamma - 10 = 0 $</span></td>
+					</tr>
+					<tr>
+						<td><label>Resolving at B (horizontal)</label></td>
+						<td><span class="solution-hidden" id="solution-5-3">$ -T_{AB}\cos\alpha + T_{BC}\cos\beta + T_{BD}\cos\delta = 0 $</span></td>
+					</tr>
+					<tr>
+						<td><label>Resolving at B (vertical)</label></td>
+						<td><span class="solution-hidden" id="solution-5-4">$ -T_{AB}\sin\alpha - T_{BC}\sin\beta + T_{BD}\sin\delta - 2 = 0 $</span></td>
+					</tr>
+					<tr>
+						<td><label>Resolving at D (horizontal)</label></td>
+						<td><span class="solution-hidden" id="solution-5-5">$ -T_{AD}\cos\phi -T_{BD}\cos\delta - T_{DE}\cos\epsilon + T_{CD}\cos\gamma = 0 $</span></td>
+					</tr>
+					<tr>
+						<td><label>Resolving at D (vertical)</label></td>
+						<td><span class="solution-hidden" id="solution-5-6">$ T_{AD}\sin\phi + T_{BD}\sin\delta - T_{DE}\sin\epsilon + T_{CD}\sin\gamma = 0 $</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!-- Question Six -->
+	<div class="row">
+		<div class="col-md-6">
+			<p><b>Q6: For the pylon structure shown in figure Q6, determine the forces in members AB, BD, BC and DE indicating whether each is in tension or compression.</b></p>
+			<hr />
+			<img alt="Figure 1.1" src="images/ts-2-6-edit.png" class="img-thumbnail tall-img">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="questionSix" >
+			</div>
+			<p class="" id="questionSixResult"></p>
+			<div class="form-group">
+				<button onclick="generateEquation('questionSix','previewSix')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('questionSix')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewSix">Preview: $F = ma$</p>
+			<p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+		</div>
+		<div class="col-md-6">
+			<table class="table table-striped table-condensed">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Working</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><label>Angle $ \alpha $</label></td>
+						<td><span class="solution-hidden" id="solution-6-1">$ \alpha = 26.565 $</span></td>
+					</tr>
+					<tr>
+						<td><label>A (Vertical)</label></td>
+						<td><span class="solution-hidden" id="solution-6-2">$ T_{AB}\sin\alpha + 1800\cos15 = 0 $</span></td>
+					</tr>
+					<tr>
+						<td><label>A (Horizontal)</label></td>
+						<td><span class="solution-hidden" id="solution-6-3">$ T_{AE} + T_{AB}\cos\alpha - 1800\sin15 = 0 $</span></td>
+					</tr>
+					<tr>
+						<td><label></label></td>
+						<td><span class="solution-hidden" id="solution-6-4">$ T_{AE} = T_{DE} $</span></td>
+					</tr>
+					<tr>
+						<td><label></label></td>
+						<td><span class="solution-hidden" id="solution-6-5">$ T_{BD} = 0 $</span></td>
+					</tr>
+					<tr>
+						<td><label></label></td>
+						<td><span class="solution-hidden" id="solution-6-6">$ T_{BC} = T_{AB} $</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!-- Question Six -->
+	<div class="row">
+		<div class="col-md-6">
+			<p><b>Figure Q7 shows a rectangular pin-jointed space frame. Guy wires EJ and GK are attached to the structure at E and G as shown and are tightened until the tension in each is 1800N. Find the force in each member of the structure.</b></p>
+			<hr />
+			<img alt="Figure 1.1" src="images/ts-2-7.png" class="img-thumbnail tall-img">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="questionSeven" >
+			</div>
+			<p class="" id="questionSevenResult"></p>
+			<div class="form-group">
+				<button onclick="generateEquation('questionSeven','previewSeven')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('questionSeven')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewSeven">Preview: $F = ma$</p>
+			<p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+		</div>
+		<div class="col-md-6">
+			<table class="table table-striped table-condensed">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Working</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><label></label></td>
+						<td><span class="solution-hidden" id="solution-7-1">$ \alpha = \tan^{-1}(\frac{1.5}{4}) = 20.556 $</span></td>
+					</tr>
+					<tr>
+						<td><label></label></td>
+						<td><span class="solution-hidden" id="solution-7-2">$ \beta = \tan^{-1}(\frac{3}{4}) = 36.870 $</span></td>
+					</tr>
+					<tr>
+						<td><label>Looking at E</label></td>
+						<td><span class="solution-hidden" id="solution-7-3">$ T_{AE} = -T_{EJ}\cos\alpha = 1800\cos\alpha = -1685.4N $</span></td>
+					</tr>
+					<tr>
+						<td><label></label></td>
+						<td><span class="solution-hidden" id="solution-7-4">$ T_{EF} = T_{EJ}\sin\alpha\cos45 = 1800\sin\alpha\cos45 = 446.91N $</span></td>
+					</tr>
+					<tr>
+						<td><label>Looking at F</label></td>
+						<td><span class="solution-hidden" id="solution-7-5">$ T_{EF} + T_{AF}\sin\beta = 0 $</span></td>
+					</tr>
+					<tr>
+						<td><label></label></td>
+						<td><span class="solution-hidden" id="solution-7-6">$ T_{AF} = -744.85N $</span></td>
+					</tr>
+					<tr>
+						<td><label></label></td>
+						<td><span class="solution-hidden" id="solution-7-7">$ T_{AF} = T_{CF} $ due to symmetry</span></td>
+					</tr>
+					<tr>
+						<td><label></label></td>
+						<td><span class="solution-hidden" id="solution-7-8">$ T_{BF} = -T_{AF}\cos\beta - T_{CF}\cos\beta = -2T_{AF}\cos\beta = 1191.8N $</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+  <hr>
+  <footer>
+    <p class="text-muted">Interactive Online Tutorial Sheets - 2014</p>
+  </footer>
+</div>
+
+<!-- ##################################### -->
+
+<script type="text/javascript" src="core-functions.js" ></script>
+<script type="text/javascript">
+function checkEquation(input) {
+	var equation = document.getElementById(input).value;
+
+	if (! equation) {
+		console.log('No Input')
+		return;
+	}
+	//console.log(equation);
+	if (input == 'questionOne') {
+		//console.log('through if');
+		status = 'false';
+		status = checkAgainstTwo(status, equation,'solution-1-1','T_{AB}','sqrt{2}');
+		status = checkAgainstTwo(status, equation,'solution-1-2','T_{AC}','-1');
+		status = checkAgainstTwo(status, equation,'solution-1-3','T_{BC}','-1');
+		status = checkAgainstTwo(status, equation,'solution-1-4','T_{BD}','1');
+		status = checkAgainstTwo(status, equation,'solution-1-5','T_{CD}','sqrt{2}');
+		status = checkAgainstTwo(status, equation,'solution-1-6','T_{CE}','-2');
+		status = checkAgainstTwo(status, equation,'solution-1-7','T_{DE}','-1');
+		status = checkAgainstTwo(status, equation,'solution-1-8','T_{DF}','2');
+		status = checkAgainstTwo(status, equation,'solution-1-9','T_{EF}','sqrt{2}');
+		status = checkAgainstTwo(status, equation,'solution-1-10','T_{EG}','-3');
+		status = checkAgainstTwo(status, equation,'solution-1-11','T_{FG}','sqrt{2}');
+		status = checkAgainstTwo(status, equation,'solution-1-12','T_{FH}','3');
+		status = checkAgainstTwo(status, equation,'solution-1-13','T_{GH}','sqrt{2}');
+		status = checkAgainstTwo(status, equation,'solution-1-15','T_{HI}','-1');
+		status = checkAgainstTwo(status, equation,'solution-1-16','T_{HJ}','4');
+		status = checkAgainstTwo(status, equation,'solution-1-17','T_{IJ}','sqrt{2}');
+		status = checkAgainstTwo(status, equation,'solution-1-18','T_{IK}','-5');
+		status = checkAgainstTwo(status, equation,'solution-1-19','T_{JK}','-1');
+		status = checkAgainstTwo(status, equation,'solution-1-20','T_{JL}','5')
+		status = checkAgainstTwo(status, equation,'solution-1-21','T_{KL}','sqrt{2}');
+		status = checkAgainstTwo(status, equation,'solution-1-22','T_{KM}','-5');
+		status = checkAgainstTwo(status, equation,'solution-1-23','P','1');
+		status = checkAgainstTwo(status, equation,'solution-1-24','Q','6');
+		status = checkAgainstTwo(status, equation,'solution-1-25','T_{LM}','0');
+		status = checkAgainstTwo(status, equation,'solution-1-26','R','6');
+
+		status = checkAgainstThree(status, equation,'solution-1-23','T_{KL}','P','0');
+		status = checkAgainstThree(status, equation,'solution-1-26','T_{KM}','R','0');
+
+		status = checkAgainstFour(status, equation,'solution-1-1','-1','T_{AB}','sin45','0');
+		status = checkAgainstFour(status, equation,'solution-1-2','T_{AC}','T_{AB}','cos45','0');
+		status = checkAgainstFour(status, equation,'solution-1-3','T_{BC}','T_{AB}','sin45','0');
+		status = checkAgainstFour(status, equation,'solution-1-4','T_{BD}','T_{AB}','cos45','0');
+		status = checkAgainstFour(status, equation,'solution-1-5','T_{BC}','T_{CD}','sin45','0');
+		status = checkAgainstFour(status, equation,'solution-1-7','T_{DE}','T_{CD}','sin45','0');
+		status = checkAgainstFour(status, equation,'solution-1-9','T_{DE}','T_{EF}','sin45','0');
+		status = checkAgainstFour(status, equation,'solution-1-11','T_{FG}','T_{EF}','sin45','0');
+		status = checkAgainstFour(status, equation,'solution-1-13','T_{FG}','T_{GH}','sin45','0');
+		status = checkAgainstFour(status, equation,'solution-1-15','T_{HI}','T_{GH}','sin45','0');
+		status = checkAgainstFour(status, equation,'solution-1-17','T_{HI}','T_{IJ}','sin45','0');
+		status = checkAgainstFour(status, equation,'solution-1-19','T_{JK}','T_{IJ}','sin45','0');
+		status = checkAgainstFour(status, equation,'solution-1-21','T_{JK}','T_{KL}','sin45','0');
+
+		status = checkAgainstFive(status, equation,'solution-1-6','T_{AC}','T_{CE}','T_{CD}','cos45','0');
+		status = checkAgainstFive(status, equation,'solution-1-8','T_{DF}','T_{BD}','T_{CD}','cos45','0');
+		status = checkAgainstFive(status, equation,'solution-1-10','T_{CE}','T_{EG}','T_{CD}','cos45','0');
+		status = checkAgainstFive(status, equation,'solution-1-12','T_{FH}','T_{DF}','T_{EF}','cos45','0');
+		status = checkAgainstFive(status, equation,'solution-1-16','T_{HJ}','T_{FH}','T_{GH}','cos45','0');
+		status = checkAgainstFive(status, equation,'solution-1-18','T_{GI}','T_{IK}','T_{IJ}','cos45','0');
+		status = checkAgainstFive(status, equation,'solution-1-20','T_{JL}','T_{HJ}','T_{IJ}','cos45','0');
+		status = checkAgainstFive(status, equation,'solution-1-22','T_{IK}','T_{KM}','T_{KL}','cos45','0');
+		status = checkAgainstFive(status, equation,'solution-1-24','T_{JL}','Q','T_{KL}','cos45','0');
+
+		isInSolution(status, 'questionOneResult');
+	}
+	if (input == 'questionTwo') {
+		console.log('Question Two Pressed');
+		status = 'false';
+
+		if (!isNaN(equation)) {
+			console.log('Is Number');
+			//status = betweenValues(status, equation, 'solution-2-3', 3500, 3600);
+			//status = betweenValues(status, equation, 'solution-2-4', 2900, 3000);
+			//status = betweenValues(status, equation, 'solution-2-5', 2900, 3000);
+			//status = betweenValues(status, equation, 'solution-2-6', 0, 0);
+			//status = betweenValues(status, equation, 'solution-2-7', 0, 0);
+			//status = betweenValues(status, equation, 'solution-2-8', 3500, 3600);
+		}
+
+		status = checkAgainstTwo(status, equation,'solution-2-3','-1.80W', 'T_{DE}');
+		status = checkAgainstTwo(status, equation,'solution-2-5','T_{BC}', 'T_{CD}');
+		status = checkAgainstTwo(status, equation,'solution-2-6','T_{CE}', '0');
+		status = checkAgainstTwo(status, equation,'solution-2-7','T_{BE}', '0');
+		status = checkAgainstTwo(status, equation,'solution-2-8','T_{EF}', 'T_{DE}');
+		status = checkAgainstTwo(status, equation,'solution-2-9','T_{AB}', 'T_{BC}');
+		status = checkAgainstTwo(status, equation,'solution-2-10','T_{BF}', '0');
+		status = checkAgainstTwo(status, equation,'solution-2-11','T_{AF}', '0');
+		status = checkAgainstTwo(status, equation,'solution-2-12','T_{FG}', 'T_{EF}');
+		status = checkAgainstTwo(status, equation,'solution-2-15','Q', 'T_{AB}');
+		status = checkAgainstTwo(status, equation,'solution-2-16','P', 'T_{AG}');
+		status = checkAgainstTwo(status, equation,'solution-2-17','P', 'W');
+		status = checkAgainstTwo(status, equation,'solution-2-18','Q', 'R');
+		status = checkAgainstTwo(status, equation,'solution-2-19','6R', '9W');
+
+		status = checkAgainstFour(status, equation,'solution-2-3','T_{DE}','W','sin','alpha');
+		status = checkAgainstFour(status, equation,'solution-2-4','T_{CD}','T_{DE}','cos','alpha');
+		status = checkAgainstFour(status, equation,'solution-2-4','3', 'T_{CD}', '2', 'W');
+		status = checkAgainstFour(status, equation,'solution-2-5','3', 'T_{BC}', '2', 'W');
+		status = checkAgainstFour(status, equation,'solution-2-13','R', 'T_{FG}', 'cos', 'alpha');
+		status = checkAgainstFour(status, equation,'solution-2-14','T_{AG}', 'T_{FG}', 'sin', 'alpha');
+
+		status = checkAgainstFive(status, equation,'solution-2-1','T_{DE}','sin','alpha','W','0');
+		status = checkAgainstFive(status, equation,'solution-2-2','T_{DE}','cos','alpha','T_{CD}','0');
+
+		isInSolution(status, 'questionTwoResult');
+	}
+	if (input == 'questionThree') {
+		console.log('Question Three Pressed');
+		status = 'false';
+
+		status = checkAgainstTwo(status, equation,'solution-3-1','Q', '0');
+		status = checkAgainstFour(status, equation,'solution-3-2','P','W','R','0');
+		status = checkAgainstFour(status, equation,'solution-3-3','W','3W','4R','0');
+		status = checkAgainstTwo(status, equation,'solution-3-4','P', 'R');
+		status = checkAgainstThree(status, equation,'solution-3-4','1','2','W');
+		status = checkAgainstFour(status, equation,'solution-3-5','T_{AB}','P','sin45','0');
+		status = checkAgainstFour(status, equation,'solution-3-5','T_{AB}','W','2','sqrt');
+		status = checkAgainstFour(status, equation,'solution-3-6','T_{AF}','P','sin45','0');
+		status = checkAgainstFour(status, equation,'solution-3-6','T_{AF}','W','2','sqrt');
+		status = checkAgainstFive(status, equation,'solution-3-7','T_{AB}','cos45','T_{BF}','W','0');
+		status = checkAgainstFour(status, equation,'solution-3-7','T_{BF}','3','4','W');
+		status = checkAgainstFour(status, equation,'solution-3-8','T_{AB}','sin45','T_{BC}','0');
+		status = checkAgainstThree(status, equation,'solution-3-8','T_{BC}','W','4');
+		status = checkAgainstFive(status, equation,'solution-3-9','T_{BF}','T_{AF}','cos45','T_{CF}','0');
+		status = checkAgainstFour(status, equation,'solution-3-9','T_{CF}','W','sqrt','2');
+		status = checkAgainstFive(status, equation,'solution-3-10','T_{AF}','sin45','T_{CF}','T_{EF}','0');
+		status = checkAgainstThree(status, equation,'solution-3-10','T_{EF}','W','4');
+		status = checkAgainstFour(status, equation,'solution-3-11','T_{DE}','sin45','T_{EF}','0');
+		status = checkAgainstFour(status, equation,'solution-3-11','T_{DE}','W','2','sqrt');
+		status = checkAgainstFour(status, equation,'solution-3-12','T_{CE}','T_{DE}','cos45','0');
+		status = checkAgainstThree(status, equation,'solution-3-12','T_{CE}','W','4');
+		status = checkAgainstFour(status, equation,'solution-3-13','T_{DE}','cos45','T_{CD}','0');
+		status = checkAgainstFour(status, equation,'solution-3-13','T_{CD}','W','2','sqrt');
+		isInSolution(status, 'questionThreeResult');
+	}
+	if (input == 'questionFour') {
+		console.log('Question Four Pressed');
+		status = 'false';
+		status = checkAgainstFour(status, equation,'solution-4-1','T_{AB}','cos','T_{BD}','0');
+		status = checkAgainstFive(status, equation,'solution-4-2','T_{AB}','sin','T_{BD}','0','T_{BC}');
+		status = checkAgainstSix(status, equation,'solution-4-3','T_{AB}','3','T_{BD}','0','5','6');
+		status = checkAgainstSix(status, equation,'solution-4-4','T_{AB}','4','5','6','T_{BD}','92');
+		status = checkAgainstFour(status, equation,'solution-4-5','T_{BD}','6','5','T_{AB}');
+		status = checkAgainstTwo(status, equation,'solution-4-6','T_{AB}','50');
+		status = checkAgainstTwo(status, equation,'solution-4-7','T_{BD}','60');
+		isInSolution(status, 'questionFourResult');
+	}
+	if (input == 'questionFive') {
+		console.log('Question Five Pressed');
+		status = 'false';
+
+		status = checkAgainstSix(status, equation,'solution-5-1','T_{BC}','cos','beta','T_{CD}','gamma','1');
+		status = checkAgainstSix(status, equation,'solution-5-2','T_{BC}','sin','beta','T_{CD}','gamma','10');
+		status = checkAgainstSeven(status, equation,'solution-5-3','T_{AB}','cos','alpha','T_{BC}','beta','T_{BD}','delta');
+		status = checkAgainstEight(status, equation,'solution-5-4','T_{AB}','sin','alpha','T_{BC}','beta','T_{BD}','delta','2');
+		status = checkAgainstNine(status, equation,'solution-5-5','T_{AD}','cos','phi','T_{BD}','delta','T_{DE}','epsilon','T_{CD}','gamma');
+		status = checkAgainstNine(status, equation,'solution-5-6','T_{AD}','sin','phi','T_{BD}','delta','T_{DE}','epsilon','T_{CD}','gamma');
+
+		isInSolution(status, 'questionFiveResult');
+	}
+	if (input == 'questionSix') {
+		console.log('Question Six Pressed');
+		status = 'false';
+
+		if (!isNaN(equation)) {
+			console.log('Is Number');
+			status = betweenValues(status, equation, 'solution-6-1', 26, 27);
+		}
+
+		status = checkAgainstSix(status, equation,'solution-6-2','T_{AB}','sin','alpha','1800','cos','15');
+		status = checkAgainstSix(status, equation,'solution-6-3','T_{AE}','T_{AB}','cos','alpha','1800','sin','15');
+		status = checkAgainstTwo(status, equation,'solution-6-4','T_{AE}','T_{DE}');
+		status = checkAgainstTwo(status, equation,'solution-6-5','T_{BD}','0');
+		status = checkAgainstTwo(status, equation,'solution-6-6','T_{BC}','T_{AB}');
+
+		isInSolution(status, 'questionSixResult');
+	}
+	if (input == 'questionSeven') {
+		console.log('Question Seven Pressed');
+		status = 'false';
+
+		if (!isNaN(equation)) {
+			console.log('Is Number');
+			status = betweenValues(status, equation, 'solution-7-1', 20, 21);
+			status = betweenValues(status, equation, 'solution-7-2', 35, 38);
+			status = betweenValues(status, equation, 'solution-7-3', -1700, -1600);
+			status = betweenValues(status, equation, 'solution-7-4', 440, 450);
+			status = betweenValues(status, equation, 'solution-7-6', -740, -730);
+			status = betweenValues(status, equation, 'solution-7-7', 1180, 1200);
+		}
+
+		status = checkAgainstFour(status, equation,'solution-7-1','alpha','tan','1.5','4');
+		status = checkAgainstFour(status, equation,'solution-7-2','beta','tan','3','4')
+		status = checkAgainstFour(status, equation,'solution-7-3','T_{AE}','T_{EJ}','cos','alpha');
+		status = checkAgainstFour(status, equation,'solution-7-3','T_{AE}','1800','cos','alpha');
+		status = checkAgainstSix(status, equation,'solution-7-4','T_{EF}','T_{EJ}','sin','alpha','cos','45');
+		status = checkAgainstSix(status, equation,'solution-7-4','T_{EF}','1800','sin','alpha','cos','45');
+		status = checkAgainstFour(status, equation,'solution-7-5','T_{EF}','T_{AF}','sin','beta');
+		status = checkAgainstTwo(status, equation,'solution-7-6','T_{AF}','T_{CF}');
+		status = checkAgainstFive(status, equation,'solution-7-7','T_{BF}','T_{AF}','cos','beta','T_{CF}');
+		status = checkAgainstFive(status, equation,'solution-7-7','T_{BF}','T_{AF}','cos','beta','2');
+
+		isInSolution(status, 'questionSevenResult');
+	}
+}
+</script>
+
+</body>

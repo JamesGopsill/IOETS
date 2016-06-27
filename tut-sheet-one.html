@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Online Engineering Tutorial Sheets - Tutorial Sheet One</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link href="style.css" rel="stylesheet">
+
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+         showProcessingMessages: false,
+        tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
+      });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <h3><a href="index.html">Interactive Online Tutorial Sheets</a></h3>
+  <hr>
+	<h1>Tutorial Sheet One <small>Equilibrium</small></h1>
+	<!-- QUESTION ONE -->
+	<div class="row">
+		<div class="col-md-6">
+			<p><b>Q1:</b> Determine the resultant of each system of concurrent forces shown in figures below. What force is needed to bring each system into a state of equilibrium?</p>
+			<hr />
+			<img alt="Figure 1.1" src="images/ts-1-1.png" class="img-thumbnail">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="inputOne" >
+			</div>
+			<div class="form-group">
+				<button onclick="generateEquation('inputOne')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('inputOne')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewOne">Preview: $F = ma$</p>
+			<p>Click <a href="#">Here</a> for Maths Help</p>
+		</div>
+
+		<div class="col-md-5">
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-1-1'>$ 30\cos45 + 15\cos45 -20\cos15 = 12.501 $</p>
+			</div>
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-1-2'>$ 30\sin45 + 15\sin45 -20\sin15 = 15.783 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Magnitude of Resultant</label>
+				<p class="solution-hidden" id='solution-1-3'>$ \sqrt{(12.501^2+15.783^2)} = 20.134N $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Angle of Resultant</label>
+				<p class="solution-hidden" id='solution-1-4'>$ \tan^-1(\frac{15.783}{12.501}) = 51.618 $</p>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<!-- QUESTION TWO -->
+	<div class="row">
+		<div class="col-md-6">
+			<img alt="Figure 1.2" src="images/ts-1-2.png" class="img-thumbnail">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="inputTwo" >
+			</div>
+			<div class="form-group">
+				<button onclick="generateEquation('inputTwo')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('inputTwo')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewTwo">Preview: $F = ma$</p>
+			<p>Click <a href="#">Here</a> for Maths Help</p>
+		</div>
+
+		<div class="col-md-5">
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-2-1'>$ 100\cos60 + 320\cos30 - 250\cos15 = 110.622 $</p>
+			</div>
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-2-2'>$ 100\sin60 - 320\sin30 - 250\sin15 = 110.622 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Magnitude of Resultant</label>
+				<p class="solution-hidden" id='solution-2-3'>$ 227.153N $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Angle of Resultant</label>
+				<p class="solution-hidden" id='solution-2-4'>$ -60.857 $</p>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<!-- QUESTION Three -->
+	<div class="row">
+		<div class="col-md-6">
+			<img alt="Figure 1.3" src="images/ts-1-3.png" class="img-thumbnail">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="inputThree" >
+			</div>
+			<div class="form-group">
+				<button onclick="generateEquation('inputThree')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('inputThree')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewThree">Preview: $F = ma$</p>
+			<p>Click <a href="#">Here</a> for Maths Help</p>
+		</div>
+
+		<div class="col-md-5">
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-3-1'>$ 200\cos30 + 150\cos120 + 100\cos150 + 100\cos315 = 82.313 $</p>
+			</div>
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-3-2'>$ 200\sin30 + 150\sin120 + 100\sin150 + 100\sin315 = 209.193 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Magnitude of Resultant</label>
+				<p class="solution-hidden" id='solution-3-3'>$ 224.804N $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Angle of Resultant</label>
+				<p class="solution-hidden" id='solution-3-4'>$ 68.521 $</p>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<!-- QUESTION Four -->
+	<div class="row">
+		<div class="col-md-6">
+			<img alt="Figure 1.4" src="images/ts-1-4.png" class="img-thumbnail">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="inputFour" >
+			</div>
+			<div class="form-group">
+				<button onclick="generateEquation('inputFour')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('inputFour')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewFour">Preview: $F = ma$</p>
+			<p>Click <a href="#">Here</a> for Maths Help</p>
+		</div>
+
+		<div class="col-md-5">
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-4-1'>$ 120\cos71 + 150\cos108 + 250\cos235 + 160\cos341 = 0.604 $</p>
+			</div>
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-4-2'>$ 120\sin71 + 150\sin108 + 250\sin235 + 160\sin341 = −0.758 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Magnitude of Resultant</label>
+				<p class="solution-hidden" id='solution-4-3'>$ 0$</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Angle of Resultant</label>
+				<p class="solution-hidden" id='solution-4-4'>$ 0 $</p>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<!-- QUESTION Five -->
+	<div class="row">
+		<div class="col-md-6">
+			<p><b>Q2:</b> The shaded shapes in figure Q2 are made up of squares of side a = 50mm. Find the resultant force and/or couple of each system of planar forces.</p>
+			<hr />
+			<img alt="Figure 1.5" src="images/ts-1-5.png" class="img-thumbnail">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="inputFive" >
+			</div>
+			<div class="form-group">
+				<button onclick="generateEquation('inputFive')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('inputFive')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewFive">Preview: $F = ma$</p>
+			<p>Click <a href="#">Here</a> for Maths Help</p>
+		</div>
+
+		<div class="col-md-5">
+			<div class="sporcle-box">
+				<label>Horizontal</label>
+				<p class="solution-hidden" id='solution-5-1'>$ 10 - 30 = -20 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Vertical</label>
+				<p class="solution-hidden" id='solution-5-2'>$ 20 - 20 = 0 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Moment about A </label>
+				<p class="solution-hidden" id='solution-5-3'>$ -10a + 20a = 10a $</p>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<!-- QUESTION Six -->
+	<div class="row">
+		<div class="col-md-6">
+			<img alt="Figure 1.6" src="images/ts-1-6.png" class="img-thumbnail">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="inputSix" >
+			</div>
+			<div class="form-group">
+				<button onclick="generateEquation('inputSix')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('inputSix')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewSix">Preview: $F = ma$</p>
+			<p>Click <a href="#">Here</a> for Maths Help</p>
+		</div>
+
+		<div class="col-md-5">
+			<div class="sporcle-box">
+				<label>Horizontal</label>
+				<p class="solution-hidden" id='solution-6-1'>$ 18 - 29 + 82\cos45 = 47 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Vertical</label>
+				<p class="solution-hidden" id='solution-6-2'>$ 82\sin45 - 11 = 47 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Moment about B </label>
+				<p class="solution-hidden" id='solution-6-3'>$ 36a + 11a = 47a $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Magnitude </label>
+				<p class="solution-hidden" id='solution-6-4'>$ 47\sqrt{2} = 66.5N $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Direction of Resultant </label>
+				<p class="solution-hidden" id='solution-6-5'>$ 45 degrees $</p>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<!-- QUESTION Seven -->
+	<div class="row">
+		<div class="col-md-6">
+			<img alt="Figure 1.7" src="images/ts-1-7.png" class="img-thumbnail">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="inputSeven" >
+			</div>
+			<div class="form-group">
+				<button onclick="generateEquation('inputSeven')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('inputSeven')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewSeven">Preview: $F = ma$</p>
+			<p>Click <a href="#">Here</a> for Maths Help</p>
+		</div>
+
+		<div class="col-md-5">
+			<div class="sporcle-box">
+				<label>Horizontal</label>
+				<p class="solution-hidden" id='solution-7-1'>$ 30 + 20 - 10 - 20 - 30 = 0 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Vertical</label>
+				<p class="solution-hidden" id='solution-7-2'>$ 10 + 30 - 40 = 0 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Moment about C </label>
+				<p class="solution-hidden" id='solution-7-3'>$ 20a + 30(2a) + 40a -10(3a) - 20(2a) - 30(2a) = -10a $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Resultant </label>
+				<p class="solution-hidden" id='solution-7-4'>$ 10a = 0.5Nm $</p>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<!-- QUESTION Eight -->
+	<div class="row">
+		<div class="col-md-6">
+			<p><b>Q3:</b> Figure Q3 shows a 400N load supported by a combination of a straight strut AP and a cable BP. Find the forces in the strut and the cable.</p>
+			<hr />
+			<img alt="Figure 1.8" src="images/ts-1-8.png" class="img-thumbnail">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="inputEight" >
+			</div>
+			<div class="form-group">
+				<button onclick="generateEquation('inputEight')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('inputEight')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewEight">Preview: $F = ma$</p>
+			<p>Click <a href="#">Here</a> for Maths Help</p>
+		</div>
+
+		<div class="col-md-5">
+			<div class="sporcle-box">
+				<label>Horizontal</label>
+				<p class="solution-hidden" id='solution-8-1'>$ T_{AP}\sin30 + T_{BP}\sin45 = 0 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Vertical</label>
+				<p class="solution-hidden" id='solution-8-2'>$ 400 + T_{AP}\cos30 + T_{BP}\cos45 = 0 $</p>
+			</div>
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-8-3'>$ T_{AP} = \frac{-400}{(cos30-sin30)} = -1092.8N $</p>
+			</div>
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-8-4'>$ T_{BP} = \frac{T_{AP}\sin30}{\sin45} = 772.7N $</p>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<!-- QUESTION Nine -->
+	<div class="row">
+		<div class="col-md-6">
+			<p><b>Q4:</b> In level flight, the chord AB of an aeroplane wing makes an angle $ \alpha = 5^\circ $ with the horizontal as in figure Q4. The resultant effect of the wind pressure on the wing for such conditions is defined by the load L and drag D components as shown. Resolve these forces into components parallel and perpendicular to the chord AB. Find also the resultant of the lift and drag components.</p>
+			<hr />
+			<img alt="Figure 1.9" src="images/ts-1-9.png" class="img-thumbnail">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="inputNine" >
+			</div>
+			<div class="form-group">
+				<button onclick="generateEquation('inputNine')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('inputNine')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewNine">Preview: $F = ma$</p>
+			<p>Click <a href="#">Here</a> for Maths Help</p>
+		</div>
+
+		<div class="col-md-5">
+			<div class="sporcle-box">
+				<label>Horizontal</label>
+				<p class="solution-hidden" id='solution-9-1'>$ D\cos\alpha−L\sin\alpha = 800\cos5 − 6000\sin5 = 274.0N $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Vertical</label>
+				<p class="solution-hidden" id='solution-9-2'>$ D\sin\alpha + L\cos\alpha = 800\sin5 + 6000\cos5 = 6046.9N $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Resultant</label>
+				<p class="solution-hidden" id='solution-9-3'>$ \sqrt{(L^2+D^2)} = \sqrt{(6000^2+800^2)} = 6053.1N $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Angle</label>
+				<p class="solution-hidden" id='solution-9-4'>$ \tan^{−1}(\frac{L}{D}) = \tan^{−1}7.5 = 82.41 $</p>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<!-- QUESTION Ten -->
+	<div class="row">
+		<div class="col-md-6">
+			<p><b>Q5:</b> Figure Q5 shows a steel shaft comprising a cylinder of length 1m and diameter 60mm to which are attached two discs as shown. The shaft is supported at its ends by two bearings. Sketch the free body diagram of the shaft and estimate the reaction forces at the bearings.</p>
+			<hr />
+			<img alt="Figure 1.9" src="images/ts-1-10.png" class="img-thumbnail">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="inputTen" >
+			</div>
+			<div class="form-group">
+				<button onclick="generateEquation('inputTen')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('inputTen')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewTen">Preview: $F = ma$</p>
+			<p>Click <a href="#">Here</a> for Maths Help</p>
+		</div>
+
+		<div class="col-md-6">
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-10-1'>$ \rho\pi(0.03)^2\times1 = \rho\pi(0.9\times10^{-3}) $</p>
+			</div>
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-10-2'>$ \rho\pi(0.2^2 - 0.03^2)\times0.06 = \rho\pi(2.346\times10^{-3}) $</p>
+			</div>
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-10-3'>$ \rho\pi(0.3^2 - 0.03^2)\times0.084 = \rho\pi(7.484\times10^{-3}) $</p>
+			</div>
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-10-4'>$ R_1 + R_2 = m_1 + m_2 + m_0 = \rho\pi(10.730\times10^{-3}) $</p>
+			</div>
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-10-5'>$ 0.832R_2 = 0.274m_1g + 0.416m_0g + 0.601m_2g = (5.515\times10^{−3})\rho\pi g $</p>
+			</div>
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-10-6'>$ 0.832R_1 = 0.558m_1g + 0.416m_0g + 0.231m_2g = (3.412\times10^{−3})\rho\pi g $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>$ R_1 $</label>
+				<p class="solution-hidden" id='solution-10-7'>$ (6.629\times10^{−3})\rho\pi g = 1604 N $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>$ R_2 $</label>
+				<p class="solution-hidden" id='solution-10-4'>$ (4.101\times10^{-3})\rho\pi g = 992 N  $</p>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<!-- QUESTION Eleven -->
+	<div class="row">
+		<div class="col-md-6">
+			<p><b>Q4:</b> Figure Q6 shows a typical design for a vehicle weighbridge. Each of the levers has a : b in the ratio 1 : 10 as shown. A balance load of W = 12N is required on the lowest lever. Assuming that the centre of mass of the vehicle is midway between its axles and that the vehicle is symmetrically placed on the weighbridge, find the mass of the vehicle. What happens if the assumptions are not valid?</p>
+			<hr />
+			<img alt="Figure 1.11" src="images/ts-1-11.png" class="img-thumbnail">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="inputEleven" >
+			</div>
+			<div class="form-group">
+				<button onclick="generateEquation('inputEleven')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('inputEleven')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewEleven">Preview: $F = ma$</p>
+			<p>Click <a href="#">Here</a> for Maths Help</p>
+		</div>
+
+		<div class="col-md-5">
+			<div class="sporcle-box">
+				<label>Bar One</label>
+				<p class="solution-hidden" id='solution-11-1'>$ A = 10W = 120 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Bar Two</label>
+				<p class="solution-hidden" id='solution-11-2'>$ B = 11A = 1320 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Between Bar Two and the next two</label>
+				<p class="solution-hidden" id='solution-11-3'>$ B = B_1 + B_2  $</p>
+			</div>
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-11-4'>$ Mg = C_1 + C_2 = 11(B_1 + B_2) = 11B = 14520 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Weight</label>
+				<p class="solution-hidden" id='solution-11-5'>$ \frac{14520}{9.81} = 1480kg $</p>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<!-- QUESTION Twelve -->
+	<div class="row">
+		<div class="col-md-6">
+			<p><b>Q7:</b> For the crane jib shown in figure Q7, find the forces in members AB and AC; the tension in the cable DE; the reaction components at hinge H; and the supporting forces (including any moments) required on the shaft S.</p>
+			<hr />
+			<img alt="Figure 1.12" src="images/ts-1-12.png" class="img-thumbnail">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="inputTwelve" >
+			</div>
+			<div class="form-group">
+				<button onclick="generateEquation('inputTwelve')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('inputTwelve')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewTwelve">Preview: $F = ma$</p>
+			<p>Click <a href="#">Here</a> for Maths Help</p>
+		</div>
+
+		<div class="col-md-5">
+			<div class="sporcle-box">
+				<label>Forces at Point A</label>
+				<p class="solution-hidden" id='solution-12-1'>$ T_{AC} + T_{AB}\cos\alpha = 0 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Forces at Point A</label>
+				<p class="solution-hidden" id='solution-12-2'>$ 30 - T_{AB}\sin\alpha = 0 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>$T_{AB}$</label>
+				<p class="solution-hidden" id='solution-12-3'>$ \frac{30}{\sin\alpha} = 80.78kN $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>$T_{AC}$</label>
+				<p class="solution-hidden" id='solution-12-4'>$ -80.78\times\frac{2.5}{\sqrt{7.25}} = -75kN $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Forces at Point H</label>
+				<p class="solution-hidden" id='solution-12-5'>$ R_1 - T_{DE}\cos\beta = 0 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Forces at Point H</label>
+				<p class="solution-hidden" id='solution-12-6'>$ R_2 + T_{DE}\sin\beta - 30 = 0 $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>$T_{DE}$</label>
+				<p class="solution-hidden" id='solution-12-7'>$ \frac{30\times15\times\sqrt{80}}{4\times7} = 143.75kN $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>$R_{1}$</label>
+				<p class="solution-hidden" id='solution-12-8'>$ 128.57kN $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>$R_{2}$</label>
+				<p class="solution-hidden" id='solution-12-9'>$ -34.29kN $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Forces at Point S</label>
+				<p class="solution-hidden" id='solution-12-10'>$ S = 130kN $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Forces at Point S</label>
+				<p class="solution-hidden" id='solution-12-11'>$ M_{S} = 30 \times 18 - 100 \times 3 = 240kNm $</p>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<!-- QUESTION Thirteen -->
+	<div class="row">
+		<div class="col-md-6">
+			<p><b>Q8:</b> A long ladder leans against a wall at an angle of $ 30^\circ $ to the vertical as shown in figure Q8. The wall is assumed smooth and the coefficient of friction between the ladder and the ground is 0.55. A builder climbs the ladder. Sketch the free body diagram for the ladder. What is the frictional force at the base when the builder is half-way up? How far can the builder go up the ladder before disaster strikes? If you were told that the coefficient of friction is in fact 0.6, would you climb the ladder to the top?</p>
+			<hr />
+			<img alt="Figure 1.5" src="images/ts-1-13.png" class="img-thumbnail">
+			<hr />
+			<div class="form-group">
+				<label for="exampleInputEmail1">Enter Maths</label>
+				<input class="form-control" type="text" placeholder="f=ma" id="inputThirteen" >
+			</div>
+			<div class="form-group">
+				<button onclick="generateEquation('inputThirteen')" class="btn btn-primary">Generate Maths</button>
+				<button onclick="checkEquation('inputThirteen')" class="btn btn-primary">Check Against Solution</button>
+			</div>
+			<p id="previewThirteen">Preview: $F = ma$</p>
+			<p>Click <a href="#">Here</a> for Maths Help</p>
+		</div>
+
+		<div class="col-md-5">
+			<img alt="Figure 1.5" src="images/ts-1-14.png" class="img-thumbnail solution-hidden" id="fbd-1">
+			<hr />
+			<button onclick="revealFBD('fbd-1')" class="btn btn-warning">Reveal FBD</button>
+			<hr />
+			<div class="sporcle-box">
+				<label>Horizontal</label>
+				<p class="solution-hidden" id='solution-13-1'>$ S = F $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Vertical</label>
+				<p class="solution-hidden" id='solution-13-2'>$ W = R $</p>
+			</div>
+			<div class="sporcle-box">
+				<label>Moments</label>
+				<p class="solution-hidden" id='solution-13-3'>$ (a \cos 30)S = (b \sin 30)W $</p>
+			</div>
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-13-4'>$ F = S = \frac{b}{a}W(\tan30) = \frac{b}{a}R(\tan30) $</p>
+			</div>
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-13-5'>$ b = \frac{a}{2} $</p>
+			</div>
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-13-6'>$ F = 0.2887W = 0.2887R $</p>
+			</div>
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-13-7'>$ \frac{b}{a} = \frac{0.55}{\tan30} = 0.9526 $</p>
+			</div>
+			<div class="sporcle-box">
+				<p class="solution-hidden" id='solution-13-8'>$ \frac{F}{R} = \tan30 = 0.5774 $</p>
+			</div>
+		</div>
+	</div>
+  <hr>
+  <footer>
+    <p class="text-muted">Interactive Online Tutorial Sheets - 2014</p>
+  </footer>
+</div>
+
+<!-- ##################################### -->
+
+<script type="text/javascript">
+	function revealFBD(id) {
+		document.getElementById(id).className = 'img-thumbnail';
+	}
+	function generateEquation(input) {
+		if (input == "inputOne") {
+			document.getElementById('previewOne').innerHTML = 'Preview: $'+document.getElementById(input).value+'$';
+			MathJax.Hub.Queue(["Typeset",MathJax.Hub,"previewOne"]);
+		}
+		if (input == "inputTwo") {
+			document.getElementById('previewTwo').innerHTML = 'Preview: $'+document.getElementById(input).value+'$';
+			MathJax.Hub.Queue(["Typeset",MathJax.Hub,"previewTwo"]);
+		}
+		if (input == "inputThree") {
+			document.getElementById('previewThree').innerHTML = 'Preview: $'+document.getElementById(input).value+'$';
+			MathJax.Hub.Queue(["Typeset",MathJax.Hub,"previewThree"]);
+		}
+		if (input == "inputFour") {
+			document.getElementById('previewFour').innerHTML = 'Preview: $'+document.getElementById(input).value+'$';
+			MathJax.Hub.Queue(["Typeset",MathJax.Hub,"previewFour"]);
+		}
+		if (input == "inputFive") {
+			document.getElementById('previewFive').innerHTML = 'Preview: $'+document.getElementById(input).value+'$';
+			MathJax.Hub.Queue(["Typeset",MathJax.Hub,"previewFive"]);
+		}
+		if (input == "inputSix") {
+			document.getElementById('previewSix').innerHTML = 'Preview: $'+document.getElementById(input).value+'$';
+			MathJax.Hub.Queue(["Typeset",MathJax.Hub,"previewSix"]);
+		}
+		if (input == "inputSeven") {
+			document.getElementById('previewSeven').innerHTML = 'Preview: $'+document.getElementById(input).value+'$';
+			MathJax.Hub.Queue(["Typeset",MathJax.Hub,"previewSeven"]);
+		}
+		if (input == "inputEight") {
+			document.getElementById('previewEight').innerHTML = 'Preview: $'+document.getElementById(input).value+'$';
+			MathJax.Hub.Queue(["Typeset",MathJax.Hub,"previewEight"]);
+		}
+		if (input == "inputNine") {
+			document.getElementById('previewNine').innerHTML = 'Preview: $'+document.getElementById(input).value+'$';
+			MathJax.Hub.Queue(["Typeset",MathJax.Hub,"previewNine"]);
+		}
+		if (input == "inputTen") {
+			document.getElementById('previewTen').innerHTML = 'Preview: $'+document.getElementById(input).value+'$';
+			MathJax.Hub.Queue(["Typeset",MathJax.Hub,"previewTen"]);
+		}
+		if (input == "inputEleven") {
+			document.getElementById('previewEleven').innerHTML = 'Preview: $'+document.getElementById(input).value+'$';
+			MathJax.Hub.Queue(["Typeset",MathJax.Hub,"previewEleven"]);
+		}
+		if (input == "inputTwelve") {
+			document.getElementById('previewTwelve').innerHTML = 'Preview: $'+document.getElementById(input).value+'$';
+			MathJax.Hub.Queue(["Typeset",MathJax.Hub,"previewTwelve"]);
+		}
+		if (input == "inputThirteen") {
+			document.getElementById('previewThirteen').innerHTML = 'Preview: $'+document.getElementById(input).value+'$';
+			MathJax.Hub.Queue(["Typeset",MathJax.Hub,"previewThirteen"]);
+		}
+	}
+
+	function checkEquation(input) {
+		// Question One
+		if (input == 'inputOne') {
+			// console.log('input logged');
+			var equation = document.getElementById(input).value;
+			var trigger = 'false';
+			if (equation.indexOf('30\\cos45') >= 0 && equation.indexOf('15\\cos45') >= 0 && equation.indexOf('20\\cos15') >= 0 ) {
+				document.getElementById('solution-1-1').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('30\\sin45') >= 0 && equation.indexOf('15\\sin45') >= 0 && equation.indexOf('20\\sin15') >= 0 ) {
+				document.getElementById('solution-1-2').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('\\sqrt{(12.501^2+15.783^2)}') >= 0) {
+				document.getElementById('solution-1-3').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('\\tan^-1(\frac{15.783}{12.501})') >= 0) {
+				document.getElementById('solution-1-4').className = 'solution';
+				trigger = 'true';
+			}
+			if (!isNaN(equation)) {
+				if (equation >= 12 && equation <= 13) {
+					document.getElementById('solution-1-1').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= 15 && equation <= 16) {
+					document.getElementById('solution-1-2').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= 20 && equation <= 21) {
+					document.getElementById('solution-1-3').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= 51 && equation <= 52) {
+					document.getElementById('solution-1-4').className = 'solution';
+					trigger = 'true';
+				}
+			}
+			document.getElementById(input).value = "";
+		}
+		// Question Two
+		if (input == 'inputTwo') {
+			var equation = document.getElementById(input).value;
+			var trigger = 'false';
+			if (equation.indexOf('100\\cos60') >= 0 && equation.indexOf('320\\cos30') >= 0 && equation.indexOf('250\\cos15') >= 0 ) {
+				document.getElementById('solution-2-1').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('100\\sin60') >= 0 && equation.indexOf('320\\sin30') >= 0 && equation.indexOf('250\\sin15') >= 0 ) {
+				document.getElementById('solution-2-2').className = 'solution';
+				trigger = 'true';
+			}
+			if (!isNaN(equation)) {
+				if (equation >= 110 && equation <= 111) {
+					document.getElementById('solution-2-1').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= -199 && equation <= -198) {
+					document.getElementById('solution-2-2').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= 227 && equation <= 228) {
+					document.getElementById('solution-2-3').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= -61 && equation <= -60) {
+					document.getElementById('solution-2-4').className = 'solution';
+					trigger = 'true';
+				}
+			}
+			document.getElementById(input).value = "";
+		}
+		// Question Three
+		if (input == 'inputThree') {
+			var equation = document.getElementById(input).value;
+			var trigger = 'false';
+			if (equation.indexOf('200\\cos30') >= 0 && equation.indexOf('150\\cos120') >= 0 && equation.indexOf('100\\cos150') >= 0 && equation.indexOf('100\\cos315') >= 0 ) {
+				document.getElementById('solution-3-1').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('200\\sin30') >= 0 && equation.indexOf('150\\sin120') >= 0 && equation.indexOf('100\\sin150') >= 0 && equation.indexOf('100\\sin315') >= 0 ) {
+				document.getElementById('solution-3-2').className = 'solution';
+				trigger = 'true';
+			}
+			if (!isNaN(equation)) {
+				//console.log('is number');
+				if (equation >= 82 && equation <= 83) {
+					document.getElementById('solution-3-1').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= 209 && equation <= 210) {
+					document.getElementById('solution-3-2').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= 224 && equation <= 225) {
+					document.getElementById('solution-3-3').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= 68 && equation <= 79) {
+					document.getElementById('solution-3-4').className = 'solution';
+					trigger = 'true';
+				}
+			}
+			document.getElementById(input).value = "";
+		}
+		// Question Four
+		if (input == 'inputFour') {
+			var equation = document.getElementById(input).value;
+			var trigger = 'false';
+			if (equation.indexOf('120\\cos71') >= 0 && equation.indexOf('150\\cos108') >= 0 && equation.indexOf('250\\cos235') >= 0 && equation.indexOf('160\\cos341') >= 0 ) {
+				document.getElementById('solution-4-1').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('120\\sin71') >= 0 && equation.indexOf('150\\sin108') >= 0 && equation.indexOf('250\\sin235') >= 0 && equation.indexOf('160\\sin341') >= 0 ) {
+				document.getElementById('solution-4-2').className = 'solution';
+				trigger = 'true';
+			}
+			if (!isNaN(equation)) {
+				//console.log('is number');
+				if (equation >= 0.5 && equation <= 1) {
+					document.getElementById('solution-4-1').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= -1 && equation <= -0.5) {
+					document.getElementById('solution-4-2').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= -0.5 && equation <= 0.5) {
+					document.getElementById('solution-4-3').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= -0.5 && equation <= 0.5) {
+					document.getElementById('solution-4-4').className = 'solution';
+					trigger = 'true';
+				}
+			}
+			document.getElementById(input).value = "";
+		}
+		// Question Five
+		if (input == 'inputFive') {
+			var equation = document.getElementById(input).value;
+			var trigger = 'false';
+			if (equation.indexOf('10') >= 0 && equation.indexOf('30') >= 0 ) {
+				document.getElementById('solution-5-1').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('20') >= 0 ) {
+				document.getElementById('solution-5-2').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('10a') >= 0 && equation.indexOf('20a') >= 0) {
+				document.getElementById('solution-5-3').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('10a') >= 0) {
+				document.getElementById('solution-5-3').className = 'solution';
+				trigger = 'true';
+			}
+			if (!isNaN(equation)) {
+				//console.log('is number');
+				if (equation == -20) {
+					document.getElementById('solution-5-1').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation == 0) {
+					document.getElementById('solution-5-2').className = 'solution';
+					trigger = 'true';
+				}
+			}
+		}
+		// Question Six
+		if (input == 'inputSix') {
+			var equation = document.getElementById(input).value;
+			var trigger = 'false';
+			if (equation.indexOf('18') >= 0 && equation.indexOf('29') >= 0 && equation.indexOf('82\\cos45') >= 0 ) {
+				document.getElementById('solution-6-1').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('11') >= 0 && equation.indexOf('82\\sin45') >= 0 ) {
+				document.getElementById('solution-6-2').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('36a') >= 0 && equation.indexOf('11a') >= 0) {
+				document.getElementById('solution-6-3').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('47a') >= 0) {
+				document.getElementById('solution-6-3').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('47\\sqrt{2}') >= 0) {
+				document.getElementById('solution-6-4').className = 'solution';
+				trigger = 'true';
+			}
+			if (!isNaN(equation)) {
+				//console.log('is number');
+				if (equation >= 66 && equation <= 67) {
+					document.getElementById('solution-6-4').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation == 45) {
+					document.getElementById('solution-6-5').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation == 47) {
+					document.getElementById('solution-6-1').className = 'solution';
+					document.getElementById('solution-6-2').className = 'solution';
+					trigger = 'true';
+				}
+			}
+			document.getElementById(input).value = "";
+		}
+		// Question Seven
+		if (input == 'inputSeven') {
+			var equation = document.getElementById(input).value;
+			var trigger = 'false';
+			if (equation.indexOf('30') >= 0 && equation.indexOf('20') >= 0 && equation.indexOf('10') >= 0 ) {
+				document.getElementById('solution-7-1').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('10') >= 0 && equation.indexOf('30') >= 0 && equation.indexOf('40') >= 0 ) {
+				document.getElementById('solution-7-2').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('20a') >= 0 && equation.indexOf('30(2a)') >= 0 && equation.indexOf('40a') >= 0 && equation.indexOf('10(3a)') >= 0 && equation.indexOf('20(2a)') >= 0 && equation.indexOf('30(2a)') >= 0) {
+				document.getElementById('solution-7-3').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('20a') >= 0 && equation.indexOf('60a') >= 0 && equation.indexOf('40a') >= 0 && equation.indexOf('30a') >= 0) {
+				document.getElementById('solution-7-3').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('-10a') >= 0) {
+				document.getElementById('solution-7-3').className = 'solution';
+				trigger = 'true';
+			}
+			if (!isNaN(equation)) {
+				//console.log('is number');
+				if (equation == 0) {
+					document.getElementById('solution-7-1').className = 'solution';
+					document.getElementById('solution-7-2').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation == 0.5) {
+					document.getElementById('solution-7-4').className = 'solution';
+					trigger = 'true';
+				}
+			}
+			document.getElementById(input).value = "";
+		}
+		// Question Eight
+		if (input == 'inputEight') {
+			var equation = document.getElementById(input).value;
+			var trigger = 'false';
+			if (equation.indexOf('T_{AP}\\sin30') >= 0 && equation.indexOf('T_{BP}\\sin45') >= 0 && equation.indexOf('0') >= 0 ) {
+				document.getElementById('solution-8-1').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('400') >= 0 && equation.indexOf('T_{AP}\\cos30') >= 0 && equation.indexOf('T_{BP}\\cos45') >= 0 && equation.indexOf('0') >= 0 ) {
+				document.getElementById('solution-8-2').className = 'solution';
+				trigger = 'true';
+			}
+			if (!isNaN(equation)) {
+				//console.log('is number');
+				if (equation >= -1092 && equation <= -1093) {
+					document.getElementById('solution-8-3').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= 770 && equation <= 775) {
+					document.getElementById('solution-8-4').className = 'solution';
+					trigger = 'true';
+				}
+			}
+			document.getElementById(input).value = "";
+		}
+		// Question Nine
+		if (input == 'inputNine') {
+			var equation = document.getElementById(input).value;
+			var trigger = 'false';
+			if (equation.indexOf('D\\cos\\alpha') >= 0 && equation.indexOf('L\\sin\\alpha') >= 0 ) {
+				document.getElementById('solution-9-1').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('800\\cos5') >= 0 && equation.indexOf('6000\\sin5') >= 0 ) {
+				document.getElementById('solution-9-1').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('D\\sin\\alpha') >= 0 && equation.indexOf('L\\cos\\alpha') >= 0 ) {
+				document.getElementById('solution-9-2').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('800\\sin5') >= 0 && equation.indexOf('6000\\cos5') >= 0 ) {
+				document.getElementById('solution-9-2').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('L^2') >= 0 && equation.indexOf('D^2') >= 0 && equation.indexOf('\\sqrt') >= 0 ) {
+				document.getElementById('solution-9-3').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('6000^2') >= 0 && equation.indexOf('800^2') >= 0 && equation.indexOf('\\sqrt') >= 0 ) {
+				document.getElementById('solution-9-3').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('\\frac{L}{D}') >= 0 && equation.indexOf('\\tan') >= 0 ) {
+				document.getElementById('solution-9-4').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('7.5') >= 0 && equation.indexOf('\\tan') >= 0 ) {
+				document.getElementById('solution-9-4').className = 'solution';
+				trigger = 'true';
+			}
+			if (!isNaN(equation)) {
+				//console.log('is number');
+				if (equation >= 270 && equation <= 280) {
+					document.getElementById('solution-9-1').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= 6040 && equation <= 6050) {
+					document.getElementById('solution-9-2').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= 6050 && equation <= 6060) {
+					document.getElementById('solution-9-3').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= 80 && equation <= 85) {
+					document.getElementById('solution-9-4').className = 'solution';
+					trigger = 'true';
+				}
+			}
+			document.getElementById(input).value = "";
+		}
+		// Question Ten
+		if (input == 'inputTen') {
+			var equation = document.getElementById(input).value;
+			var trigger = 'false';
+			if (equation.indexOf('\\rho') >= 0 && equation.indexOf('\\pi') >= 0 && equation.indexOf('(0.03)^2') >= 0 ) {
+				document.getElementById('solution-10-1').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('\\rho') >= 0 && equation.indexOf('\\pi') >= 0 && equation.indexOf('0.9') >= 0 ) {
+				document.getElementById('solution-10-1').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('\\rho') >= 0 && equation.indexOf('\\pi') >= 0 && equation.indexOf('0.2') >= 0 && equation.indexOf('0.03') >= 0 ) {
+				document.getElementById('solution-10-2').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('\\rho') >= 0 && equation.indexOf('\\pi') >= 0 && equation.indexOf('2.346') >= 0 ) {
+				document.getElementById('solution-10-2').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('\\rho') >= 0 && equation.indexOf('\\pi') >= 0 && equation.indexOf('0.3') >= 0 && equation.indexOf('0.03') >= 0 ) {
+				document.getElementById('solution-10-3').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('\\rho') >= 0 && equation.indexOf('\\pi') >= 0 && equation.indexOf('7.484') >= 0 ) {
+				document.getElementById('solution-10-3').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('\\rho') >= 0 && equation.indexOf('\\pi') >= 0 && equation.indexOf('10.730') >= 0 ) {
+				document.getElementById('solution-10-4').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('\\rho') >= 0 && equation.indexOf('\\pi') >= 0 && equation.indexOf('5.515') >= 0 ) {
+				document.getElementById('solution-10-5').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('0.832') >= 0 && equation.indexOf('0.274') >= 0 && equation.indexOf('0.416') >= 0 && equation.indexOf('0.601') >= 0) {
+				document.getElementById('solution-10-5').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('\\rho') >= 0 && equation.indexOf('\\pi') >= 0 && equation.indexOf('3.412') >= 0 ) {
+				document.getElementById('solution-10-6').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('0.832') >= 0 && equation.indexOf('0.558') >= 0 && equation.indexOf('0.416') >= 0 && equation.indexOf('0.231') >= 0) {
+				document.getElementById('solution-10-6').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('\\rho') >= 0 && equation.indexOf('\\pi') >= 0 && equation.indexOf('6.629') >= 0 && equation.indexOf('g') >= 0 ) {
+				document.getElementById('solution-10-7').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('\\rho') >= 0 && equation.indexOf('\\pi') >= 0 && equation.indexOf('4.101') >= 0 && equation.indexOf('g') >= 0 ) {
+				document.getElementById('solution-10-7').className = 'solution';
+				trigger = 'true';
+			}
+			if (!isNaN(equation)) {
+				//console.log('is number');
+				if (equation >= 1600 && equation <= 1610) {
+					document.getElementById('solution-10-7').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= 990 && equation <= 1000) {
+					document.getElementById('solution-10-7').className = 'solution';
+					trigger = 'true';
+				}
+			}
+			document.getElementById(input).value = "";
+		}
+		// Question Eleven
+		if (input == 'inputEleven') {
+			var equation = document.getElementById(input).value;
+			var trigger = 'false';
+			if (equation.indexOf('10W') >= 0 ) {
+				document.getElementById('solution-11-1').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('11A') >= 0 ) {
+				document.getElementById('solution-11-2').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('B_1') >= 0 && equation.indexOf('B_2') >= 0 ) {
+				document.getElementById('solution-11-3').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('Mg') >= 0 && equation.indexOf('11B') >= 0 ) {
+				document.getElementById('solution-11-4').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('14520') >= 0 && equation.indexOf('9.81') >= 0 ) {
+				document.getElementById('solution-11-5').className = 'solution';
+				trigger = 'true';
+			}
+			if (!isNaN(equation)) {
+				//console.log('is number');
+				if (equation == 120) {
+					document.getElementById('solution-11-1').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation == 1320) {
+					document.getElementById('solution-11-2').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation == 14520) {
+					document.getElementById('solution-11-4').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation == 1480) {
+					document.getElementById('solution-11-5').className = 'solution';
+					trigger = 'true';
+				}
+			}
+			document.getElementById(input).value = "";
+		}
+		// Question Twelve
+		if (input == 'inputTwelve') {
+			var equation = document.getElementById(input).value;
+			var trigger = 'false';
+			if (equation.indexOf('T_{AC}') >= 0 && equation.indexOf('T_{AB}\\cos') >= 0 && equation.indexOf('0') >= 0 ) {
+				document.getElementById('solution-12-1').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('30') >= 0 && equation.indexOf('T_{AB}\\sin') >= 0 && equation.indexOf('0') >= 0 ) {
+				document.getElementById('solution-12-2').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('30') >= 0 && equation.indexOf('\\sin') >= 0 && equation.indexOf('80') >= 0 ) {
+				document.getElementById('solution-12-3').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('7.25') >= 0 && equation.indexOf('2.5') >= 0 && equation.indexOf('80') >= 0 ) {
+				document.getElementById('solution-12-4').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('\\cos') >= 0 && equation.indexOf('T_{DE}') >= 0 && equation.indexOf('R_1') >= 0 && equation.indexOf('0') >= 0 ) {
+				document.getElementById('solution-12-5').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('\\sin') >= 0 && equation.indexOf('T_{DE}') >= 0 && equation.indexOf('R_2') >= 0 && equation.indexOf('0') >= 0 && equation.indexOf('30') >= 0 ) {
+				document.getElementById('solution-12-6').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('S') >= 0 && equation.indexOf('130') >= 0 ) {
+				document.getElementById('solution-12-10').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('M') >= 0 && equation.indexOf('30') >= 0 && equation.indexOf('18') >= 0 && equation.indexOf('100') >= 0 && equation.indexOf('3') >= 0 ) {
+				document.getElementById('solution-12-11').className = 'solution';
+				trigger = 'true';
+			}
+			if (!isNaN(equation)) {
+				//console.log('is number');
+				if (equation >= 80 && equation <= 82) {
+					document.getElementById('solution-12-3').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= -77 && equation <= -73) {
+					document.getElementById('solution-12-4').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= 140 && equation <= 145) {
+					document.getElementById('solution-12-7').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= 125 && equation <= 130) {
+					document.getElementById('solution-12-8').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= -40 && equation <= -30) {
+					document.getElementById('solution-12-9').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation == 130) {
+					document.getElementById('solution-12-10').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation == 240) {
+					document.getElementById('solution-12-11').className = 'solution';
+					trigger = 'true';
+				}
+			}
+			document.getElementById(input).value = "";
+		}
+		// Question Thirteen
+		if (input == 'inputThirteen') {
+			var equation = document.getElementById(input).value;
+			var trigger = 'false';
+			if (equation.indexOf('S') >= 0 && equation.indexOf('F') >= 0) {
+				document.getElementById('solution-13-1').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('W') >= 0 && equation.indexOf('R') >= 0) {
+				document.getElementById('solution-13-2').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('W') >= 0 && equation.indexOf('S') >= 0 && equation.indexOf('b') >= 0 && equation.indexOf('a') >= 0 && equation.indexOf('\\sin30') >= 0 && equation.indexOf('\\cos30') >= 0) {
+				document.getElementById('solution-13-3').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('W') >= 0 && equation.indexOf('R') >= 0 && equation.indexOf('b') >= 0 && equation.indexOf('a') >= 0 && equation.indexOf('\\tan30') >= 0) {
+				document.getElementById('solution-13-4').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('b') >= 0 && equation.indexOf('a') >= 0 && equation.indexOf('2') >= 0) {
+				document.getElementById('solution-13-5').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('F') >= 0 && equation.indexOf('W') >= 0 && equation.indexOf('0.28') >= 0) {
+				document.getElementById('solution-13-6').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('F') >= 0 && equation.indexOf('R') >= 0 && equation.indexOf('0.28') >= 0) {
+				document.getElementById('solution-13-6').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('b') >= 0 && equation.indexOf('a') >= 0 && equation.indexOf('0.55') >= 0 && equation.indexOf('\\tan30') >= 0) {
+				document.getElementById('solution-13-7').className = 'solution';
+				trigger = 'true';
+			}
+			if (equation.indexOf('F') >= 0 && equation.indexOf('R') >= 0 && equation.indexOf('\\tan30') >= 0) {
+				document.getElementById('solution-13-8').className = 'solution';
+				trigger = 'true';
+			}
+			if (!isNaN(equation)) {
+				//console.log('is number');
+				if (equation >= 0.95 && equation <= 0.98) {
+					document.getElementById('solution-13-7').className = 'solution';
+					trigger = 'true';
+				}
+				if (equation >= 0.55 && equation <= 0.6) {
+					document.getElementById('solution-13-8').className = 'solution';
+					trigger = 'true';
+				}
+			}
+			document.getElementById(input).value = "";
+		}
+	}
+</script>
+
+</body>

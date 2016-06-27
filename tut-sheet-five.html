@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Online Engineering Tutorial Sheets - Tutorial Sheet Five</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link href="style.css" rel="stylesheet">
+
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+         showProcessingMessages: false,
+        tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
+      });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+<body>
+
+
+<div class="container">
+  <h3><a href="index.html">Interactive Online Tutorial Sheets</a></h3>
+  <hr>
+  <h1>Tutorial Sheet Five <small></small></h1>
+  <!-- QUESTION ONE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q1:</b> A goods wagon of 80 tonne is moving along a horizontal track at 3km/hr in a marshalling yard. A second wagon of 60 tonne, moving at 5km/hr on the same track and in the same direction as the first, reaches it and the two are coupled without rebound by an automatic device. Calculate the common speed of the two coupled wagons and the loss of energy during the coupling operation.</p>
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageOne"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionOne" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionOne','previewOne')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionOne', 'messageOne')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewOne">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Initial Momentum</label></td>
+            <td><span class="solution-hidden" id='solution-1-1'>$ M_{1}V_{1} + M_{2}V_{2} = 150 \times 10^{3}kgms^{-1}  $</span></td>
+          </tr>
+          <tr>
+            <td><label>Final Momentum</label></td>
+            <td><span class="solution-hidden" id='solution-1-2'>$ (M_{1} + M_{2})V_{final}  $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-1-3'>$ M_{1}V_{1} + M_{2}V_{2} = (M_{1} + M_{2})V_{final}  $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-1-4'>$ V_{final} = 1.07ms^{-1}  $</span></td>
+          </tr>
+          <tr>
+            <td><label>Or, Initial KE</label></td>
+            <td><span class="solution-hidden" id='solution-1-5'>$ 0.5(M_{1}V_{1}^{2} + M_{2}V_{2}^{2})  $</span></td>
+          </tr>
+          <tr>
+            <td><label>Final KE</label></td>
+            <td><span class="solution-hidden" id='solution-1-6'>$ V_{final} = 1.07ms^{-1}  $</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION TWO -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q2:</b> The wheels of a car of mass 880kg lock on tarmac $(\mu = 0.9)$ at a speed of $30ms^{-1}$. Estimate the time required to stop.</p>
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageTwo"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionTwo" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionTwo','previewTwo')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionTwo', 'messageTwo')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewTwo">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Horizontal Forces</label></td>
+            <td><span class="solution-hidden" id='solution-2-1'>$ F = \mu R = ma $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-2-2'>$ R = mg $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-2-3'>$ ma = \mu mg $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-2-4'>$ a = \mu g $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-2-5'>$ v = u + at $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-2-6'>$ -30 = -8.829t $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-2-7'>$ t = 3.4 $</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION THREE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q3:</b> A 120kg motorbike plus 80kg rider is to accelerate from zero to $5ms^{-1}$ in 0.8s. Estimate the time to stop.</p>
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageThree"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionThree" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionThree','previewThree')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionThree', 'messageThree')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewThree">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-3-1'>$ v = u + at $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-3-2'>$ 5 = 0 + a(0.8s), a = 6.25 $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-3-3'>$ F = ma $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-3-4'>$ F = (120+80)6.25 = 1250 $</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- QUESTION FOUR -->
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q4:</b> A very small rocket motor used for controlling a satellite is fired giving a thrust variation shown. Estimate the impulse and, if the satellite mass is 800kg, estimate the speed change. </p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-5-4.png" class="img-thumbnail tall-img">
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageFour"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionFour" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionFour','previewFour')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionFour', 'messageFour')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewFour">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Impulse</label></td>
+            <td><span class="solution-hidden" id='solution-4-1'>Area under the curve = approx $11Ns$</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-4-2'>$ a = \frac{F}{m} = \frac{11}{800}$</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- QUESTION FIVE -->
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q5:</b> The weight shown is released from rest with the cord in the horizontal position shown. When the bottom position is reached the cord strikes a small fixed bar a shown and the weight follows the dotted path. Calculate the velocity of the weight at B and C.</p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-5-5.png" class="img-thumbnail tall-img">
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageFive"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionFive" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionFive','previewFive')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionFive', 'messageFive')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewFive">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Initial Energy</label></td>
+            <td><span class="solution-hidden" id='solution-5-1'>$ mgh = 2\times9.81\times m = 19.6m  $</span></td>
+          </tr>
+          <tr>
+            <td><label>Energy at B</label></td>
+            <td><span class="solution-hidden" id='solution-5-2'>$ 0 + \frac{1}{2}mv^2  $</span></td>
+          </tr>
+          <tr>
+            <td><label>Conservation of Energy</label></td>
+            <td><span class="solution-hidden" id='solution-5-3'>$ \frac{1}{2}mv^2 = 19.6m, v = 6.26ms^{-1} $</span></td>
+          </tr>
+          <tr>
+            <td><label>Energy at C</label></td>
+            <td><span class="solution-hidden" id='solution-5-4'>$ mgh +  \frac{1}{2}mv^2  $</span></td>
+          </tr>
+          <tr>
+            <td><label>Energy at C</label></td>
+            <td><span class="solution-hidden" id='solution-5-5'>$ 1 \times 9.81 \times m + \frac{1}{2}mv^2 = 19.6m, v = 4.43ms^{-1} $</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- QUESTION SIX -->
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q6:</b> A buffer has a stiffness given by $K_{1} = 0.25MNm^{-1}$ for compressions up to 200mm and $K_{2}=0.65MNm^{-1}$ for compressions above 200mm. Such a buffer is used to bring to rest a railway truck of 25 tonne moving at $4kmhr^{-1}$. If the rolling resistance is 0.3% of the weight of the truck calculate the compression of the buffer (assuming no rebound).</p>
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageSix"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionSix" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionSix','previewSix')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionSix', 'messageSix')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewSix">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Initial Energy</label></td>
+            <td><span class="solution-hidden" id='solution-6-1'>$ \frac{1}{2}mv^{2} = 15432 $</span></td>
+          </tr>
+          <tr>
+            <td><label>Energy in Buffer</label></td>
+            <td><span class="solution-hidden" id='solution-6-2'>$ \frac{1}{2} \times 0.25 \times  0.2^2  + \frac{1}{2} \times 0.65 \times (x-0.2)^2 + 0.25 \times (x-0.2)^2$</span></td>
+          </tr>
+          <tr>
+            <td><label>Rolling Friction</label></td>
+            <td><span class="solution-hidden" id='solution-6-3'>$ \frac{0.3}{100}mgx $</span></td>
+          </tr>
+          <tr>
+            <td><label>Combine Above & Solve</label></td>
+            <td><span class="solution-hidden" id='solution-6-4'>$ \frac{1}{2}mv^{2} = \frac{1}{2} \times 0.25 \times  0.2^2  + \frac{1}{2} \times 0.65 \times (x-0.2)^2 + 0.25 \times (x-0.2)^2 + \frac{0.3}{100}mgx $</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- QUESTION SEVEN -->
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q7:</b> A force F acts on slider at an angle $\phi$ to the direction of the slide as shown. As the slider moves the force changes in magnitude and direction. If $x$ is the distance moved by the slider.
+      <br /><br />$F = 60x$&nbsp,&nbsp$\phi=3x^2$<br /><br />
+      Calculate the word done on the slider by the force F in moving from x=0 to x=0.5m. If the slide is frictionless and the slider is at rest initially calculate the velocity of the slider at x=0.5m. The mass of the slider is 0.8kg. </p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-5-7.png" class="img-thumbnail tall-img">
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageSeven"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionSeven" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionSeven','previewSeven')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionSeven', 'messageSeven')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewSeven">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-7-1'>Work Done = Force $\times$ Distance</span></td>
+          </tr>
+          <tr>
+            <td><label>Integrate for Total Work Done</label></td>
+            <td><span class="solution-hidden" id='solution-7-2'>Work Done = $\int60x\cos3x^2\, \mathrm{d}x$</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-7-3'>$x\, \mathrm{d}x = 0.5\int\, \mathrm{d}x^2$</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-7-4'>Work Done = $\int\limits_0^{0.5}30\cos3x^2\, \mathrm{d}x^2$</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-7-5'>$[10\sin3x^2]_0^{0.5} = 6.81J $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-7-6'>$ \frac{1}{2}mv^{2} = 6.81J, v = 4.12ms^{-1} $</span></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- QUESTION EIGHT -->
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q7:</b> A solid steel rod 1m long supports a collar of weight 600N as shown. Determine the maximum tension in the rod if the collar, which is free to slide on the rod, is dropped on to the nut from a height of 100mm. The upper end of the rod is rigidly fixed and extension of the rod is proportional to tension, being 0.01mm with a tension of 600N.</p>
+        <img alt="Figure 1.1" src="images/ts-5-8.png" class="img-thumbnail tall-img">
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageEight"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionEight" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionEight','previewEight')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionEight', 'messageEight')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewEight">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Stiffness of the Rod</label></td>
+            <td><span class="solution-hidden" id='solution-8-1'>$  \frac{600}{0.01 \times 10^{-3}} = 60 \times 10^6 Nm^{-1}  $</span></td>
+          </tr>
+          <tr>
+            <td><label>Initial Energy</label></td>
+            <td><span class="solution-hidden" id='solution-8-2'>$  0.1 \times 600 = 60J $</span></td>
+          </tr>
+          <tr>
+            <td><label>Final Energy, Rod Extension</label></td>
+            <td><span class="solution-hidden" id='solution-8-3'>$  60 = \frac{1}{2}kx^{2}, x = 1.41\times10^{-3} $</span></td>
+          </tr>
+          <tr>
+            <td><label>Tension in Rod</label></td>
+            <td><span class="solution-hidden" id='solution-8-4'>$  60 \times 10^6 \times 1.41 \times 10^{-3} = 84.6kN $</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr>
+  <footer>
+    <p class="text-muted">Interactive Online Tutorial Sheets - 2014</p>
+  </footer>
+</div>
+
+<!-- ##################################### -->
+
+<script type="text/javascript" src="core-functions.js" ></script>
+<script type="text/javascript">
+function checkEquation(input, output) {
+  var equation = document.getElementById(input).value;
+  //console.log(equation);
+  if (! equation) {
+    console.log('No Input')
+    document.getElementById(output).innerHTML = 'No Equation';
+    return;
+  }
+  if (input == 'questionOne') {
+    status = 'false';
+    status = checkAgainstThree(status, equation,'solution-1-1','M','V','150');
+    status = checkAgainstTwo(status, equation,'solution-1-2','M','V');
+    status = checkAgainstTwo(status, equation,'solution-1-3','M','V');
+    status = checkAgainstTwo(status, equation,'solution-1-4','V','1.');
+    status = checkAgainstThree(status, equation,'solution-1-5','V','M','0.5');
+    status = checkAgainstFour(status, equation,'solution-1-5','V','M','1','2');
+    status = checkAgainstTwo(status, equation,'solution-1-6','V','1.');
+    console.log(status)
+    isInSolution2(status, output);
+  }
+  if (input == 'questionTwo') {
+    status = 'false';
+    status = checkAgainstThree(status, equation,'solution-2-1','F','mu','R');
+    status = checkAgainstTwo(status, equation,'solution-2-1','F','ma');
+    status = checkAgainstThree(status, equation,'solution-2-1','mu','R','ma');
+    status = checkAgainstTwo(status, equation,'solution-2-2','mg','R');
+    status = checkAgainstThree(status, equation,'solution-2-3','mu','mg','ma');
+    status = checkAgainstThree(status, equation,'solution-2-4','a','mu','g');
+    status = checkAgainstFour(status, equation,'solution-2-5','v','u','a','t');
+    status = checkAgainstThree(status, equation,'solution-2-6','30','8','t');
+    status = checkAgainstTwo(status, equation,'solution-2-7','3.4','t');
+    console.log(status)
+    isInSolution2(status, output);
+  }
+  if (input == 'questionThree') {
+    status = 'false';
+    status = checkAgainstFour(status, equation,'solution-3-1','v','u','a','t');
+    status = checkAgainstFour(status, equation,'solution-3-2','5','0','a','0.8');
+    status = checkAgainstTwo(status, equation,'solution-3-2','a','6.25');
+    status = checkAgainstTwo(status, equation,'solution-3-3','F','ma');
+    status = checkAgainstFour(status, equation,'solution-3-4','F','120','80','6.25');
+    status = checkAgainstTwo(status, equation,'solution-3-4','F','1250');
+    status = checkAgainstFour(status, equation,'solution-3-4','1250','120','80','6.25');
+    console.log(status)
+    isInSolution2(status, output);
+  }
+  if (input == 'questionFour') {
+    status = 'false';
+    status = checkAgainstOne(status, equation,'solution-4-1','11');
+    status = checkAgainstThree(status, equation,'solution-4-2','F','m','a');
+    status = checkAgainstTwo(status, equation,'solution-4-2','11','800');
+    console.log(status)
+    isInSolution2(status, output);
+  }
+  if (input == 'questionFive') {
+    status = 'false';
+    status = checkAgainstThree(status, equation,'solution-5-1','m','g','h');
+    status = checkAgainstThree(status, equation,'solution-5-1','2','9.81','h');
+    status = checkAgainstTwo(status, equation,'solution-5-1','19','m');
+    status = checkAgainstThree(status, equation,'solution-5-2','m','v','0.5');
+    status = checkAgainstFour(status, equation,'solution-5-2','m','v','1','2');
+    status = checkAgainstFive(status, equation,'solution-5-3','m','v','0.5','19','m');
+    status = checkAgainstSix(status, equation,'solution-5-3','m','v','1','2','19','m');
+    status = checkAgainstTwo(status, equation,'solution-5-3','v','6.2');
+    status = checkAgainstSix(status, equation,'solution-5-4','m','g','h','v','1','2');
+    status = checkAgainstFive(status, equation,'solution-5-4','m','g','h','v','0.5');
+    status = checkAgainstSix(status, equation,'solution-5-5','m','9.81','1','v','0.5','19');
+    status = checkAgainstSix(status, equation,'solution-5-5','m','9.81','1','v','2','19');
+    status = checkAgainstTwo(status, equation,'solution-5-5','v','4.4');
+    console.log(status)
+    isInSolution2(status, output);
+  }
+  if (input == 'questionSix') {
+    status = 'false';
+    status = checkAgainstThree(status, equation,'solution-6-1','m','v','0.5');
+    status = checkAgainstFour(status, equation,'solution-6-1','m','v','1','2');
+    status = checkAgainstOne(status, equation,'solution-6-1','15432');
+    status = checkAgainstFour(status, equation,'solution-6-2','0.5','0.2','x','0.65');
+    status = checkAgainstFive(status, equation,'solution-6-2','1','2','0.2','x','0.65');
+    status = checkAgainstFive(status, equation,'solution-6-3','0.3','100','g','x','m');
+    status = checkAgainstFour(status, equation,'solution-6-3','0.003','g','x','m');
+    status = checkAgainstFive(status, equation,'solution-6-4','0.2','x','0.65','g','v');
+    console.log(status)
+    isInSolution2(status, output);
+  }
+  if (input == 'questionSeven') {
+    status = 'false';
+    status = checkAgainstThree(status, equation,'solution-7-1','Work','Force','Distance');
+    status = checkAgainstFour(status, equation,'solution-7-2','60','x','cos','3');
+    status = checkAgainstTwo(status, equation,'solution-7-3','0.5','x');
+    status = checkAgainstFour(status, equation,'solution-7-4','30','cos','3','x');
+    status = checkAgainstFour(status, equation,'solution-7-5','10','sin','3','x');
+    status = checkAgainstTwo(status, equation,'solution-7-6','m','v');
+    status = checkAgainstTwo(status, equation,'solution-7-6','4.1','v');
+    console.log(status)
+    isInSolution2(status, output);
+  }
+  if (input == 'questionEight') {
+    status = 'false';
+    status = checkAgainstTwo(status, equation,'solution-8-1','600','0.01');
+    status = checkAgainstOne(status, equation,'solution-8-1','60');
+    status = checkAgainstOne(status, equation,'solution-8-2','60');
+    status = checkAgainstTwo(status, equation,'solution-8-2','600','0.1');
+    status = checkAgainstOne(status, equation,'solution-8-3','1.4');
+    status = checkAgainstTwo(status, equation,'solution-8-4','60','1.4');
+    status = checkAgainstOne(status, equation,'solution-8-4','84');
+    console.log(status)
+    isInSolution2(status, output);
+  }
+}
+
+</script>
+
+</body>

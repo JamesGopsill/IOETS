@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Online Engineering Tutorial Sheets - Tutorial Sheet Ten</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link href="style.css" rel="stylesheet">
+
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+         showProcessingMessages: false,
+        tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
+      });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <h3><a href="index.html">Interactive Online Tutorial Sheets</a></h3>
+  <hr>
+
+  <h1>Tutorial Sheet Ten <small>Combined Motions, Geared Systems</small></h1>
+  <!-- QUESTION ONE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q1:</b> The diagram shows a typical 3-speed car gearbox (with reverse omitted). The gears are in mesh all the time; for 1st and 2nd gear A and B respectively are locked to the output shaft. In 3rd (top) gear the input and output shafts are locked together. For each of the intermediate gears calculate the output speed and torque and the torque required to hold the casing, when the engine delivers $64kW$ at $500revmin^{-1}$</p>
+      <div style="text-align:center"><img alt="Figure 1.1" src="images/ts-10-1-1.png" class="img-thumbnail"></div>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-10-1-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-10-1-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-10-1-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-10-1-1"><p class="lead"> Calculate the gear ratio and use this to work out the rotational speed of the output shaft.</p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-10-1-2"><p class="lead"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-10-1-2.png" class="img-thumbnail"></div></p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-10-1-3"><p class="lead">$T_i - T_o + T_c = I\ddot{\theta} = 0$ </p></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION TWO -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q2:</b> The double gear shown rolls on the stationary lower rack; the velocity of it centre A is $1.2ms^{-1}$ directed to the right. Determine the angular velocity of the gear, the velocity of the upper rack R and the point D.</p>
+      <div style="text-align:center"><img alt="Figure 1.1" src="images/ts-10-2-1.png" class="img-thumbnail"></div>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-10-2-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-10-2-2')" class="btn btn-success">Hint Two</button>
+        <!-- <button onclick="revealHint('hint-10-2-3')" class="btn btn-success">Hint Three</button> -->
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-10-2-1"><p class="lead"> Take the centre of the gear as your datum and compare everything to that. </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-10-2-2"><p class="lead"> Work out the angular velocity of $1.2ms^{-1}$ </p></span></td>
+          </tr>
+          <!-- <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution" id="hint-10-2-3">$ $</span></td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION THREE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q3:</b> A reduction gearbox consists of an input gear with an inertia of $0.05kgm^2$ and 20 teeth driving a gear with 60 teeth mounted on a lay shaft with an inertia of $0.1kgm^2$. The other ned of the lay shaft drives the output shaft with an inertia of $0.5kgm^2$ through a reduction gear ratio 5:1. Calculate the overall reduction gear ratio and the effective inertia of the system measured at the input shaft. If the input power to the gearbox is $10kW$ at a speed of $1500revmin^{-1}$ and the gearbox efficiency is 90% calculate the output torque and the holding torque provided by the mounting bolts on the gearbox casing.</p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-10-3-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-10-3-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-10-3-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-10-3-1"><p class="lead"> Gear Ration = Input Turns / Output Turns </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-10-3-2"><p class="lead">$ I_{\mathrm{effective}} = I_{\mathrm{input}} + \frac{I_{\mathrm{lay shaft}}}{G^2_{\mathrm{in:lay}}} + \frac{I_{\mathrm{out}}}{G^2_{\mathrm{in:out}}}$ </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-10-3-3">Output Torque - Input Torque = Holding Torque</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION FOUR -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q4:</b> Grandma sits sewing, drops her spool of thread on the floor and the cat paws it out of her reach (silly Grandma). If it is lying as shown in the figure, under what circumstances can Grandma retrieve the spool by pulling at the thread? Assume sufficient friction on the floor so that the spool will roll without slipping. Show that the horizontal acceleration of the spool is:</p>
+      <p class="text-center">$\frac{Tr}{m}(\frac{r\cos\alpha-a}{k^2+r^2})$</p>
+      <p>where k is the radius of gyration of the spool and m is the mass</p>
+      <div style="text-align:center"><img alt="Figure 1.1" src="images/ts-10-4-1.png" class="img-thumbnail"></div>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-10-4-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-10-4-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-10-4-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-10-4-1"><p class="lead"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-10-4-2.png" class="img-thumbnail"></div></p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-10-4-2"><p class="lead">Horizontal Forces:<br />
+            $R+T\sin\alpha-mg=m\ddot{y}=0$<br />
+            Vertical Forces:<br />
+            $T\cos\alpha-F=m\ddot{x}$</p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-10-4-3"><p class="lead">Moments about the centre of the spool:<br />
+            $Fr-Ta=I\ddot{\theta}$<br />
+            Relate Linear and Angular Coordinates<br />
+            $\ddot{x}=r\ddot{\theta}$<br />
+            $I=mk^2$</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION FIVE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q5:</b> An automatic radar tracker with a motor moment of inertia of $0.014kgm^2$ turns an aerial of moment of inertia $28.8kgm^2$ through a reduction gearbox. On start up, the gearbox has a ratio of 60:1. <br />
+      a. Calculate the initial acceleration of the aerial if the motor torque is $1Nm$.<br />
+      b. Calculate the optimum gear ratio which would give the maximum acceleration at the aerial for any given motor torque.<br/>
+      c. The motor characteristics are such that the maximum torque available falls as the motor speeds up at a rate of 7% of the standstill torque for every $20rads{^1}$. Calculate the reduction ratio for the maximum acceleration of the aerial when it turns at $8rads^1$</p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-10-5-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-10-5-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-10-5-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-10-5-1"><p class="lead">$I_{\mathrm{eff}} = I_{\mathrm{motor}} + \frac{I_{\mathrm{aerial}}}{G^2}$ </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-10-5-2"><p class="lead">$\ddot{\theta}_{\mathrm{aerial}} = \frac{T_{motor}}{G(I_{\mathrm{motor}}+\frac{I_{\mathrm{aerial}}}{G^2})}$<br /> Differentiate to find the maximum</p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-10-5-3"><p class="lead">Need to get $T_{\mathrm{motor}}$ in terms of $\omega_{\mathrm{aerial}}$ and put into the above equation.</p></span></td>
+          </tr>aerial
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION SIX -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q6:</b> A flywheel of inertia I is supported on a shaft of radius r. A rope of negligible thickness is wound around the shaft and supports a mass M hanging vertically. A constant frictional couple C acts on the shaft. Prove that the angular acceleration of the shaft is given by the expression:</p>
+      <p class="text-center">$\ddot{\theta} = \frac{Mgr-C}{Mr^2+I}$</p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-10-6-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-10-6-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-10-6-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-10-6-1"><div style="text-align:center"><img alt="Figure 1.1" src="images/ts-10-6-1.png" class="img-thumbnail"></div></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-10-6-2"><p class="lead">$Mg-T=M\ddot{x}$<br/>$Tr-C=I\ddot{\theta}$ </p></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-10-6-3"><p class="lead">$\ddot{x}=\ddot{\theta}r$</span></p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr>
+  <footer>
+    <p class="text-muted">Interactive Online Tutorial Sheets - 2014</p>
+  </footer>
+</div>
+
+<!-- ##################################### -->
+
+<script type="text/javascript">
+function revealHint(hint) {
+  document.getElementById(hint).className = 'solution';
+}
+</script>
+
+</body>

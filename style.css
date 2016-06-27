@@ -1,0 +1,42 @@
+.sporcle-box
+{
+  background-color: rgb(240,240,240);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+
+.solution-hidden
+{
+  visibility: hidden;
+}
+
+.solution
+{
+
+}
+
+.right-col
+{
+  max-height: 700px;
+  overflow: scroll;
+}
+
+.tall-img
+{
+  max-height: 400px;
+}
+
+.img-logos
+{
+  height: 100px;
+}
+
+.feedback-btn
+{
+  margin-top: 10px;
+  text-align: right;
+}

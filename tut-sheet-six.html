@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Online Engineering Tutorial Sheets - Tutorial Sheet Six</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link href="style.css" rel="stylesheet">
+
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+         showProcessingMessages: false,
+        tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
+      });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <h3><a href="index.html">Interactive Online Tutorial Sheets</a></h3>
+  <hr>
+  <h1>Tutorial Sheet Six <small>Stress-Strain One</small></h1>
+  <!-- QUESTION ONE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q1:</b> The stiffness of a spring (in its linear elastic range) is defined to be tension divided by extension. A metal bar under an axial load can be regarded as a spring. If its length is $L$, its cross-sectional area is $A$, and its Young’s modulus is $E$, show that its stiffness is $\frac{EA}{L}$.</p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-1-1-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-1-1-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-1-1-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-1-1-1">$ F = \sigma A $</span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-1-1-2">$x = \epsilon L$</span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-1-1-3">$k = \frac{F}{x} $</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION TWO -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q2:</b> The data in table 1 was obtained from a tensile test on a magnesium alloy specimen. The diameter of the specimen was 11.3 mm, and the extensions were measured over a gauge length of 50 mm. The extensiometer was set to zero when the specimen had been securely gripped in the jaws of the machine and the load reading was 2.5 kN. Plot (sketch) the stress-strain graph and hence obtain Young’s modulus and the 0.2% proof stress. At a stress of 250 MPa, what are: (a) the plastic strain, (b) the tangent modulus, and (c) the secant modulus.</p>
+      <hr />
+      <img alt="Figure 1.1" src="images/ts-6-2.png" class="img-thumbnail">
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-2-1-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-2-1-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-2-1-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-2-1-1">Calculate the Cross-Sectional Area </span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-2-1-2">$ \sigma = \frac{P}{A}, \epsilon = \frac{x}{L} $</span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-2-1-3"><img alt="Figure 1.1" src="images/ts-6-2-3.png" class="img-thumbnail"></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION THREE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q3:</b> An aluminium alloy rod of length 1.8 m and rectangular cross-sectional of area $ 250 mm^2 $ is subjected to a compressive load of 45 kN. Young’s modulus and Poisson’s ratio for the material are: $E = 71 GPa $ and $ ν = 0.33 $. Determine the decrease in length and increase in area of the bar.</p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-3-1-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-3-1-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-3-1-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-3-1-1">$ \sigma_x = \frac{F}{A} $</span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-3-1-2">$ \epsilon_x = \frac{\sigma_x}{E} $</span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-3-1-3">$ \bigtriangleup A = (Y + \bigtriangleup Y)(Z + \bigtriangleup Z) - A $</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION FOUR -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q4:</b> A steel bar of length 2.5 m with a square cross-section of side 100 mm is subjected to an axial tensile load of 1300 kN. Assuming that for the steel, Young’s modulus E is 200 GPa, and Poisson’s ratio $v$ is 0.3, find the elongation of the bar and the change in cross-sectional area.
+[ Part of exam question in January, 2010 ]</p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-4-1-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-4-1-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-4-1-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-4-1-1"> Calculate Axial Stress, Strain and Extension</span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-4-1-2">$ \bigtriangleup A = (Y + \bigtriangleup Y)(Z + \bigtriangleup Z) - A $</span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-4-1-3">$ -2A(v\epsilon) $</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION FIVE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q5:</b> A rod whose length is 0.5 m has a cross-sectional area which varies linearly from $400 mm^2$ at one end to $1000 mm^2$ at the other end. If Young’s modulus for the material is E = 140 GPa, calculate the increase in length of the bar when it carries a load of 160 kN.</p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-5-1-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-5-1-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-5-1-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-5-1-1"><img alt="Figure 1.1" src="images/ts-6-5-1.png" class="img-thumbnail"></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-5-1-2">$ A(x) = (400 + 1200x) \times 10^{-6}m^{2} $</span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-5-1-3">$\frac{\bigtriangleup e}{\bigtriangleup x} = \epsilon = \frac{\sigma}{E} = \frac{P}{EA(x)}$, Integrate</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION SIX -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q6:</b> Figure Q6 shows three circular rods of length 0.8 m: two are made of aluminium and have a diameter of 20 mm; the third is made of steel and has a diameter of 40 mm. The Young’s modulus of aluminium is 70 GPa and of steel is 210 GPa. The upper part of the figure shows the rods side-by-side and subjected to a compressive load of 100 kN. In the lower part, the rods are placed end-to-end and subject to the same compressive load. Find the contractions of each of the rods in each of the two loading cases.</p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-6-6.png" class="img-thumbnail">
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-6-1-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-6-1-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-6-1-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-6-1-1"> Calculate Cross-Sectional Areas </span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-6-1-2"><b>Case One:</b> Load shared between rods hence common compression</span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-6-1-3"><b>Case Two:</b> Common compressive force</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION SEVEN -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q7:</b> A cube of material is subjected to a compressive stress σx in the x-direction. In the z- direction, there is no restraint, but, in the y-direction, there is a restraining compressive stress σy such that the strain in the y-direction is half that in the z-direction. Show that the strain in the x-direction is given by </p>
+      <div style="text-align:center"> $\epsilon_x = \frac{-\sigma_x}{E}\frac{(2-v)(1+v)}{2+v}$ </div>
+      <p>[ Other part of exam question in January, 2010 ]</p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-7-1-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-7-1-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-7-1-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-7-1-1">$\epsilon_x = \frac{\sigma_x}{E} - v\frac{\sigma_y}{E}$ </span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-7-1-2">$\epsilon_y = -v\frac{\sigma_x}{E} + \frac{\sigma_y}{E}$;&nbsp$\epsilon_z = -v\frac{\sigma_x}{E} - v\frac{\sigma_y}{E}$</span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-7-1-3">$-2v\sigma_x + 2\sigma_y = -v\sigma_x - v\sigma_y$</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION EIGHT -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q8:</b> The stress-strain equation for a material (which does not obey Hooke’s law) may be
+approximated by the following equation (where the stress σ is given in Pascals).</p>
+      <div style="text-align:center"> $\epsilon = \frac{\sigma}{70\times10^9}+[\frac{\sigma}{2\times10^9}]^3$ </div>
+      <p>Calculate the value of the 0.2% proof stress. What are the values of the tangent and secant modulus at a stress of 300 MPa.</p>
+      <hr />
+      <div class="form-group" style="text-align:center">
+        <button onclick="revealHint('hint-8-1-1')" class="btn btn-success">Hint One</button>
+        <button onclick="revealHint('hint-8-1-2')" class="btn btn-success">Hint Two</button>
+        <button onclick="revealHint('hint-8-1-3')" class="btn btn-success">Hint Three</button>
+      </div>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Hints</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Hint One</label></td>
+            <td><span class="solution-hidden" id="hint-8-1-1"><img alt="Figure 1.1" src="images/ts-6-8-1.png" class="img-thumbnail"></span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Two</label></td>
+            <td><span class="solution-hidden" id="hint-8-1-2">Calculate $ \frac{d\epsilon}{d\sigma} $</span></td>
+          </tr>
+          <tr>
+            <td><label>Hint Three</label></td>
+            <td><span class="solution-hidden" id="hint-8-1-3">$ \sigma = (\epsilon - s)A $</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr>
+  <footer>
+    <p class="text-muted">Interactive Online Tutorial Sheets - 2014</p>
+  </footer>
+</div>
+
+<!-- ##################################### -->
+
+<script type="text/javascript">
+function revealHint(hint) {
+  document.getElementById(hint).className = 'solution';
+}
+</script>
+
+</body>

@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Online Engineering Tutorial Sheets - Tutorial Sheet Four</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link href="style.css" rel="stylesheet">
+
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+         showProcessingMessages: false,
+        tex2jax: { inlineMath: [['$','$'],['\\(','\\)']] }
+      });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <h3><a href="index.html">Interactive Online Tutorial Sheets</a></h3>
+  <hr>
+  <h1>Tutorial Sheet Four <small>Newton's Laws, Friction, Non-Constant Acceleration</small></h1>
+  <!-- QUESTION ONE -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q1:</b> A crane is lifting a crate of mass 20kg with an upward acceleration of $2ms^{-2}$ by means of a single cable. What is the tension ($T$) in the cable? <br /> \ddot{x} => $ \ddot{x} $</p>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageOne"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionOne" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionOne','previewOne')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionOne', 'messageOne')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewOne">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Resolve Forces Vertically</label></td>
+            <td><span class="solution-hidden" id='solution-1-1'>$ T - mg = m\ddot{x}  $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-1-2'>$ T = m\ddot{x} + mg  $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-1-3'>$ T = 316N  $</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION Two -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q2:</b> The platform, together with the load it carries, weighs 3000N, and is raised by winding the supporting cable around the drum A which is driven by the motor and gear unit B so as to give tension of 1200N in the cable. Find the initial acceleration of the platform. What is the initial acceleration of the part of the cable between the drum and the upper pulley?</p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-4-2.png" class="img-thumbnail tall-img">
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageTwo"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionTwo" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionTwo','previewTwo')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionTwo','messageTwo')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewTwo">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Resolve Forces Vertically</label></td>
+            <td><span class="solution-hidden" id='solution-2-1'>$ 3T - mg = m\ddot{x}  $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-2-2'>$ x = 1.96ms^{-1}  $</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION Three -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q3:</b> Determine the acceleration of the 100kg mass for each of the cases illustrated. The mass and friction of the pulleys are negligible. Hint - Take care to draw accurate Free Body Diagrams.</p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-4-3.png" class="img-thumbnail tall-img">
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageThree"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionThree" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionThree','previewThree')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionThree', 'messageThree')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewThree">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+          <tr>
+            <td><label>Case A</label></td>
+            <td><span class="solution-hidden" id='solution-3-1'>$ T - mg = m\ddot{x} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-3-2'>$ T = 1470N $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-3-3'>$ \ddot{x} = 4.89ms^{-2} $</span></td>
+          </tr>
+          <tr>
+            <td><label>Case B: RHS Mass</label></td>
+            <td><span class="solution-hidden" id='solution-3-4'>$ T - mg = m\ddot{x} $</span></td>
+          </tr>
+          <tr>
+            <td><label>Case B: LHS Mass</label></td>
+            <td><span class="solution-hidden" id='solution-3-5'>$ Mg - T = M\ddot{x} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-3-6'>$ Mg - mg = \ddot{x}(M+m) $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-3-7'>$ \ddot{x} = 1.96ms^{-2} $</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <!-- QUESTION Four -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q4:</b> The frame shown is given a steady horizontal acceleration a = 2g. Determine the reaction between the sphere, which weighs 10N, and the vertical surface.</p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-4-4.png" class="img-thumbnail tall-img">
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageFour"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionFour" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionFour','previewFour')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionFour','messageFour')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewFour">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+            <td><label>Resolve Vertically</label></td>
+            <td><span class="solution-hidden" id='solution-4-1'>$ R\cos15 - mg = m\ddot{y} = 0 $</span></td>
+          </tr>
+          <tr>
+            <td><label>Resolve Horizontally</label></td>
+            <td><span class="solution-hidden" id='solution-4-2'>$ F + R\sin15 = m\ddot{X} = 2gm = 2 \times 9.81 \times m $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-4-3'>$ F + mg\tan15 = 2mg $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-4-4'>$ F = mg(2 +\tan15) = 17.32N $</span></td>
+          </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <hr />
+  <!-- QUESTION Five -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q5:</b> The crate shown has a mass of 15kg and is being pulled up a plane at 30 degrees by a chord parallel to the plane. Calculate the tension necessary to give the crate an acceleration parallel to the plane of $5ms^{-2}$. The coefficient of friction is 0.3.</p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-4-5.png" class="img-thumbnail tall-img">
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageFive"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionFive" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionFive','previewFive')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionFive','messageFive')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewFive">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-5-1'>$ F = \mu R $</span></td>
+          </tr>
+          <tr>
+            <td><label>Resolve Forces</label></td>
+            <td><span class="solution-hidden" id='solution-5-2'>$ mg\cos30 - R = m\ddot{y} = 0 $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-5-3'>$ T - F - mg\sin30 = m\ddot{x} = 5m $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-5-4'>$ T - \mu R -mg\sin30 = 5m $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-5-5'>$ T - \mu (mg\cos30) - mg\sin30 = 5m $</span></td>
+          </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <hr />
+  <!-- QUESTION Six -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q6:</b> The electric train shown consists of three coaches A,B,C of mass 35t, 45t and 35t respectively. It is travelling at $60kmh^{-1}$ when the brakes are applied to coaches A and B, giving a braking force on each of these coaches of 25kN, but no braking force on C. Calculate the force in each coupling. <br /><i>Note:</i> Coupling A-B = $ T $ &amp: B-C = $ N $.</p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-4-6.png" class="img-thumbnail tall-img">
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageSix"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionSix" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionSix','previewSix')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionSix','messageSix')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewSix">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+            <td><label>Total Mass of Train</label></td>
+            <td><span class="solution-hidden" id='solution-6-1'>$ 115 $ tonnes</span></td>
+          </tr>
+          <tr>
+            <td><label>Total Braking Force</label></td>
+            <td><span class="solution-hidden" id='solution-6-2'>$ \frac{F}{M} = a = \frac{50}{115} = 0.43ms^{-2} $ tonnes</span></td>
+          </tr>
+          <tr>
+            <td><label>Horizontal Forces on Carriage C</label></td>
+            <td><span class="solution-hidden" id='solution-6-3'>$ T = 35\times10^3 \times 0.43ms^{-2} = 15.2kN $</span></td>
+          </tr>
+          <tr>
+            <td><label>Horizontal Forces on Carriage A</label></td>
+            <td><span class="solution-hidden" id='solution-6-4'>$ N + 25 \times 10^{3} = 35 \times 10^{3} \times 0.43ms^{-2}  $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-6-5'>$ N = 9.8kN  $</span></td>
+          </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <hr />
+    <!-- QUESTION Seven -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q7:</b> A 200kg crate rests on a 100kg cart; the coefficient of friction between the crate and cart is 0.25. If the crate is not to slip with respect to the cart, calculate: <br /> a. The maximum allowable magnitude of the force P which may be applied to the cart. <br /> b. The corresponding acceleration of the cart.</p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-4-7.png" class="img-thumbnail tall-img">
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageSeven"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionSeven" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionSeven','previewSeven')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionSeven','messageSeven')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewSeven">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+            <td><label>Upper Mass - Vertical Forces</label></td>
+            <td><span class="solution-hidden" id='solution-7-1'>$ R - mg = m\ddot{y} = 0 $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-7-2'>$ R = mg $</span></td>
+          </tr>
+          <tr>
+            <td><label>Upper Mass - Horizontal Forces</label></td>
+            <td><span class="solution-hidden" id='solution-7-3'>$\mu R = m\ddot{x} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-7-4'>$ \ddot{x} = 2.45ms^{-2} $</span></td>
+          </tr>
+          <tr>
+            <td><label>Cart Horizontal Forces</label></td>
+            <td><span class="solution-hidden" id='solution-7-5'>$ P = M\ddot{x} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-7-6'>$ M = 300kg $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-7-7'>$ P = 735N $</span></td>
+          </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <!-- QUESTION Eight -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q8:</b> The collar A has a mass of 10kg and slides on a vertical shaft. The spring is uncompressed when the collar is in the dotted position. Determine the initial acceleration of the collar when it is released from rest in the position illustrated. The coefficient of friction between the collar and the shaft is 0.2, and the stiffness of the spring is $2500Nm^{-1}$</p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-4-8.png" class="img-thumbnail tall-img">
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageEight"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionEight" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionEight','previewEight')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionEight','messageEight')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewEight">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+            <td><label>Spring Tension</label></td>
+            <td><span class="solution-hidden" id='solution-8-1'>$ T = kx $</span></td>
+          </tr>
+          <tr>
+            <td><label>Horizontal Forces</label></td>
+            <td><span class="solution-hidden" id='solution-8-2'>$ R - T\sin \alpha = m\ddot{x} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-8-3'>$ R = 300N $</span></td>
+          </tr>
+          <tr>
+            <td><label>Vertical Forces</label></td>
+            <td><span class="solution-hidden" id='solution-8-4'>$ T \cos \alpha - mg - \mu R = m\ddot{y} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-8-5'>$ \ddot{y} = 24.2ms^{-1} $</span></td>
+          </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+     <!-- QUESTION Nine -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q9:</b> The wedge A is free to slide without friction on the fixed horizontal surface, and friction may also be negelcted between the plunger B and its guides, which constrain the plunger to slide at right angles to the face of the wedge. Between the plunger and the wedge the coefficient of friction is 0.3. The mass of the wedge is 40kg and that of the plunger 60kg. The system is released from rest. Determine the acceleration of the wedge if the wedge angle is 30 degrees. <br /> <i>Hint:</i> The plunger is accelerating as well as the wedge.</p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-4-9.png" class="img-thumbnail tall-img">
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageNine"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionNine" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionNine','previewNine')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionNine','messageNine')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewNine">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+            <td><label>Plunger - Forces down the plane</label></td>
+            <td><span class="solution-hidden" id='solution-9-1'>$ m_{p}g \cos 30 - R = m_{p}\ddot{x} $</span></td>
+          </tr>
+          <tr>
+            <td><label>Wedge - Horizontal Forces</label></td>
+            <td><span class="solution-hidden" id='solution-9-2'>$ R \sin 30 - \mu R \cos 30 = m_{w}\ddot{y} $</span></td>
+          </tr>
+          <tr>
+            <td><label>Translation of x to y</label></td>
+            <td><span class="solution-hidden" id='solution-9-3'>$ x = y\sin \alpha = y\sin 30 $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-9-4'>$ \ddot{x}= \ddot{y}\sin \alpha = \ddot{y}\sin 30 $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-9-5'>$ (m_{p}g\cos30-m_{p}\ddot{x})(\sin30-\mu\cos30) = m_{w}\ddot{y} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-9-6'>$ (m_{p}g\cos30-m_{p}\ddot{y}\sin30)(\sin30-\mu\cos30) = m_{w}\ddot{y} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-9-7'>$ m_{p}g\cos30(\sin30-\mu\cos30) = m_{w}\ddot{y} + m_{p}\ddot{y}\sin30(\sin30-\mu\cos30) $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-9-8'>$ \frac{m_{p}g\cos30(\sin30-\mu\cos30)}{m_{w}+m_{p}\sin30(\sin30-\mu\cos30)} = \ddot{y} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-9-9'>$ \ddot{x} = 2.59ms^{-2} $</span></td>
+          </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <!-- QUESTION Ten -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q10:</b> Two bodies of mass 5kg and 20kg slide on 45 degree inclines, as shown, and are connected together by a string which passes over a small, light frictionless pulley at the apex. Motion of the 5kg mass is resisted by a tangential force of 0.2 times the normal reaction (coefficient of friction is 0.2). Motion 20kg mass is resisted by a tangential force which is independent of the normal reaction but varies with sliding velocity according to the relationship: <br /><br /> Tangential force $ = 2.5 \times (Sliding Velocity)^2 $ <br /><br /> If the masses are released from rest, calculate the distance they will move before reaching a speed of $4ms^{-1}$ </p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-4-10.png" class="img-thumbnail tall-img">
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageTen"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionTen" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionTen','previewTen')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionTen','messageTen')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewTen">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+            <td><label>Left Hand Mass Perpendicular to Plane</label></td>
+            <td><span class="solution-hidden" id='solution-10-1'>$ R - mg = m\ddot{y} = 0$</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-10-2'>$ R = mg$</span></td>
+          </tr>
+          <tr>
+            <td><label>Left Hand Mass along Plane</label></td>
+            <td><span class="solution-hidden" id='solution-10-3'>$ T - mg\sin 45 - \mu R = m\ddot{x}$</span></td>
+          </tr>
+          <tr>
+            <td><label>Right Hand Mass along Plane</label></td>
+            <td><span class="solution-hidden" id='solution-10-4'>$ Mg\sin 45 - T - BV^{2} = M\ddot{x}$</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-10-5'>$ Mg\sin 45 - ( m\ddot{x} + mg\sin 45 + \mu R ) - BV^{2} = M\ddot{x} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-10-6'>$ g \sin 45 (M+m) - \mu R - BV^{2} = (M+m) \ddot{x}$</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-10-7'>$ \ddot{x} = 4ms^{-1}$</span></td>
+          </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <hr />
+    <!-- QUESTION Eleven -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q11:</b> The power developed by the locomotive of a fast train of total mass 515t is 6MW at the maximum speed of 270km/hr. The rolling resistance os 0.5% of its weight. If the total resistance is of the form $ A + BV^{2} $, calculate the value of B. Calculate also the tractive effort of the locomotive for an initial acceleration of $0.35ms^{-2}$ starting from rest.</p>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageEleven"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionEleven" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionEleven','previewEleven')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionEleven','messageEleven')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewEleven">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+            <td><label>Power Equation</label></td>
+            <td><span class="solution-hidden" id='solution-11-1'>$ P = Fv $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-11-2'>$ F = \frac{6 \times 10^{6}}{270/3.6} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-11-3'>$ A = BV^{2} $</span></td>
+          </tr>
+          <tr>
+            <td><label>A</label></td>
+            <td><span class="solution-hidden" id='solution-11-4'>$ A = \frac{0.5}{100} \times 515 \times 10^{3} \times 9.81 $</span></td>
+          </tr>
+          <tr>
+            <td><label>B</label></td>
+            <td><span class="solution-hidden" id='solution-11-5'>$ B = 9.73 $</span></td>
+          </tr>
+          <tr>
+            <td><label>At rest</label></td>
+            <td><span class="solution-hidden" id='solution-11-6'>$ F = ma + A $</span></td>
+          </tr>
+          <tr>
+            <td><label>At rest</label></td>
+            <td><span class="solution-hidden" id='solution-11-7'>$ F = 515 \times 10^{3} \times 0.35 + 25.3 \times 10^{3} $</span></td>
+          </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <hr />
+    <!-- QUESTION Twelve -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q12:</b> The tractive effort of a locomotive of mass 60t is given by: <br /><br /> $T = 125\times 10^{3} $ for $ 0 &lt; v &lt; 75kmhr^{-1}$ <br /> $T = \frac{C}{v} $ for $v &gt; 75kmhr^{-1} $
+      <br /><br />
+      If this train has a maximun speed of 200km/hr on a level straight track, calculate: <br /><br/ >
+      a. The maximum acceleration <br />
+      b. The time taken to reach 175km/hr<br />
+      c. The distance travelled to reach the same speed <br />
+      d. The maximum speed up an incline of 1 in 150 </p>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageTwelve"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionTwelve" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionTwelve','previewTwelve')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionTwelve','messageTwelve')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewTwelve">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-12-1'>$ \ddot{x} = \frac{F - D}{m} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-12-2'>$ \ddot{x} = \frac{125\times10^{3}- 4.75\times10^{3}}{300\times10^{3}} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-12-3'>$ \ddot{x} = 0.4ms^{-1} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-12-4'>$ T = 125 \times 10^{3} = \frac{C}{v} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-12-5'>$ C = 2.6 \times 10^{6} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-12-6'>$ D = \frac{2.6 \times 10^{6} \times 3.6}{200} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-12-7'>$ D = 4.75 + kv^{2} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-12-8'>$ k = 13.6 $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-12-9'>$ \frac{C}{v} - 4.75 \times 10^{3} - BV^{2} = ma $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-12-10'>$ F = \frac{C}{v} = mg\sin0.38 + 4.75\times 10^{3} + kv^{2} $</span></td>
+          </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <hr />
+    <!-- QUESTION Thirteen -->
+  <div class="row">
+    <div class="col-md-6">
+      <p><b>Q13:</b> The figure shows a small block P of mass 15kg resting on another block Q, of mass 60kg. The small block is held to the rigid wall BC by a rope DE parallel to AB. AB is a plane inclined at an angle of 15 degrees to the horizontal. An external force of 360N parallel to the plane AB acts on the block Q. Draw the Free Body Diagram for each block showing clearly all the forces acting and calculate: <br /><br />
+      a. The acceleration of Q when the system is released $\ddot{q}$ <br />
+      b. The tension in the rope DE. ($T$)<br /><br />
+      The coefficient of friction between all surfaces in contact is 0.3.</p>
+      <hr />
+        <img alt="Figure 1.1" src="images/ts-4-13.png" class="img-thumbnail tall-img">
+      <hr />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter Maths</label>&nbsp<span class="label label-info" id="messageThirteen"></span>
+        <input class="form-control" type="text" placeholder="f=ma" id="questionThirteen" >
+      </div>
+      <div class="form-group">
+        <button onclick="generateEquation('questionThirteen','previewThirteen')" class="btn btn-primary">Generate Maths</button>
+        <button onclick="checkEquation('questionThirteen','messageThirteen')" class="btn btn-primary">Check Against Solution</button>
+      </div>
+      <p id="previewThirteen">Preview: $F = ma$</p>
+      <p>Click <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Here</a> for Help with writing the maths</p>
+    </div>
+
+    <div class="col-md-6 right-col">
+      <table class="table table-striped table-condensed">
+        <thead>
+               <tr>
+                <th></th>
+                <th>Working</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+            <td><label>Block P: Perpendicular to Plane</label></td>
+            <td><span class="solution-hidden" id='solution-13-1'>$ R - mg\cos15 = m\ddot{y} $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-13-2'>$ R = 142N $</span></td>
+          </tr>
+          <tr>
+            <td><label>Block P: Parallel to Plane</label></td>
+            <td><span class="solution-hidden" id='solution-13-3'>$ T - \mu R \sin 15 = m\ddot{x} = 0 $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-13-4'>$ T = 80.7N $</span></td>
+          </tr>
+          <tr>
+            <td><label>Block Q: Perpendicular to Plane</label></td>
+            <td><span class="solution-hidden" id='solution-13-5'>$ N - R - mg\cos15 = 0 $</span></td>
+          </tr>
+          <tr>
+            <td><label></label></td>
+            <td><span class="solution-hidden" id='solution-13-6'>$ N = 710N $</span></td>
+          </tr>
+          <tr>
+            <td><label>Block Q: Parallel to Plane</label></td>
+            <td><span class="solution-hidden" id='solution-13-7'>$ \mu R + \mu N - 260 - Mg\sin15 = M\ddot{q} $</span></td>
+          </tr>
+          <tr>
+            <td><label>Block Q: Parallel to Plane</label></td>
+            <td><span class="solution-hidden" id='solution-13-8'>$ \ddot{q} = 4.58ms^{-2} $</span></td>
+          </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <hr>
+    <footer>
+      <p class="text-muted">Interactive Online Tutorial Sheets - 2014</p>
+    </footer>
+</div>
+
+<!-- ##################################### -->
+
+<script type="text/javascript" src="core-functions.js" ></script>
+<script type="text/javascript">
+function checkEquation(input, output) {
+  var equation = document.getElementById(input).value;
+
+  if (! equation) {
+    console.log('No Input')
+    document.getElementById(output).innerHTML = 'No Equation';
+    return;
+  }
+  if (input == 'questionOne') {
+    status = 'false';
+    status = checkAgainstSix(status, equation,'solution-1-1','m','T','g','ddot', '-','x');
+    status = checkAgainstSix(status, equation,'solution-1-2','m','T','g','ddot', '+','x');
+    status = checkAgainstTwo(status, equation,'solution-1-3','T','316');
+    isInSolution2(status, output);
+  }
+  if (input == 'questionTwo') {
+    status = 'false';
+    status = checkAgainstSix(status, equation,'solution-2-1','3','T','g','m', 'ddot','x');
+    status = checkAgainstTwo(status, equation,'solution-2-2','x','1.96');
+    isInSolution2(status, output);
+  }
+  if (input == 'questionThree') {
+    status = 'false';
+    status = checkAgainstFive(status, equation,'solution-3-1','T','g','m', 'ddot','x');
+    status = checkAgainstTwo(status, equation,'solution-3-2','T','1470');
+    status = checkAgainstFour(status, equation,'solution-3-3','ddot','x','4.89','ms');
+    status = checkAgainstFive(status, equation,'solution-3-4','T','g','m', 'ddot','x');
+    status = checkAgainstFive(status, equation,'solution-3-5','T','g','M', 'ddot','x');
+    status = checkAgainstFive(status, equation,'solution-3-6','m','g','M', 'ddot','x');
+    status = checkAgainstFour(status, equation,'solution-3-7','ddot','x','1.96','ms');
+    isInSolution2(status, output);
+  }
+  if (input == 'questionFour') {
+    status = 'false';
+    status = checkAgainstSeven(status, equation,'solution-4-1','R','cos','15','m', 'ddot','g','y');
+    status = checkAgainstSix(status, equation,'solution-4-2','R','sin','15','m', 'ddot','X');
+    status = checkAgainstFive(status, equation,'solution-4-2','ddot','X','2', 'g','m');
+    status = checkAgainstSix(status, equation,'solution-4-3','F','m','g', 'tan','15','2');
+    status = checkAgainstSix(status, equation,'solution-4-4','F','m','g', 'tan','15','2');
+    isInSolution2(status, output);
+  }
+  if (input == 'questionFive') {
+    status = 'false';
+    status = checkAgainstThree(status, equation,'solution-5-1','F','mu','R');
+    status = checkAgainstSeven(status, equation,'solution-5-2','m','g','cos','30','R','ddot','y');
+    status = checkAgainstEight(status, equation,'solution-5-3','T','F','m','sin','30','g','ddot','x');
+    status = checkAgainstThree(status, equation,'solution-5-3','m','ddot','x','5');
+    status = checkAgainstEight(status, equation,'solution-5-4','T','m','sin','30','g','mu','5','R');
+    status = checkAgainstEight(status, equation,'solution-5-5','T','m','sin','30','g','mu','5','cos');
+    isInSolution2(status, output);
+  }
+  if (input == 'questionSix') {
+    status = 'false';
+    status = checkAgainstOne(status, equation,'solution-6-1','115');
+    status = checkAgainstThree(status, equation,'solution-6-2','F','M','a');
+    status = checkAgainstTwo(status, equation,'solution-6-2','50','115');
+    status = checkAgainstOne(status, equation,'solution-6-2','0.43');
+    status = checkAgainstOne(status, equation,'solution-6-3','15.2');
+    status = checkAgainstThree(status, equation,'solution-6-3','0.43','35','T');
+    status = checkAgainstTwo(status, equation,'solution-6-3','0.43','35');
+    status = checkAgainstFour(status, equation,'solution-6-4','0.43','35','N','25');
+    status = checkAgainstTwo(status, equation,'solution-6-5','N','9.8');
+    isInSolution2(status, output);
+  }
+  if (input == 'questionSeven') {
+    status = 'false';
+    status = checkAgainstFive(status, equation,'solution-7-1','R','m','g','ddot','y');
+    status = checkAgainstFour(status, equation,'solution-7-1','R','m','g','0');
+    status = checkAgainstThree(status, equation,'solution-7-1','0','ddot','y');
+    status = checkAgainstThree(status, equation,'solution-7-2','R','m','g');
+    status = checkAgainstFive(status, equation,'solution-7-3','mu','m','R','ddot','x');
+    status = checkAgainstTwo(status, equation,'solution-7-4','x','2.45');
+    status = checkAgainstFour(status, equation,'solution-7-5','P','M','ddot','x');
+    status = checkAgainstTwo(status, equation,'solution-7-6','M','300');
+    status = checkAgainstTwo(status, equation,'solution-7-7','P','735');
+    isInSolution2(status, output);
+  }
+  if (input == 'questionEight') {
+    console.log('question eight');
+    status = 'false';
+    status = checkAgainstThree(status, equation,'solution-8-1','T','k','x');
+    status = checkAgainstSix(status, equation,'solution-8-2','T','R','sin','m','ddot','x');
+    status = checkAgainstTwo(status, equation,'solution-8-3','R','300');
+    status = checkAgainstEight(status, equation,'solution-8-4','T','cos','m','mu','R','g','ddot','y');
+    status = checkAgainstTwo(status, equation,'solution-8-5','y','24');
+    isInSolution2(status, output);
+  }
+  if (input == 'questionNine') {
+    status = 'false';
+    status = checkAgainstSix(status, equation,'solution-9-1','m','g','cos','R','ddot','x');
+    status = checkAgainstSix(status, equation,'solution-9-2','mu','cos','sin','R','ddot','y');
+    status = checkAgainstThree(status, equation,'solution-9-3','x','y','sin');
+    status = checkAgainstFour(status, equation,'solution-9-4','y','sin','ddot','x');
+    status = checkAgainstSeven(status, equation,'solution-9-5','m','mu','cos','sin','ddot','y','x');
+    status = checkAgainstSeven(status, equation,'solution-9-6','m','mu','cos','sin','ddot','y','g');
+    status = checkAgainstSeven(status, equation,'solution-9-7','m','mu','cos','sin','ddot','y','g');
+    status = checkAgainstSeven(status, equation,'solution-9-8','m','mu','cos','sin','ddot','y','g');
+    status = checkAgainstFour(status, equation,'solution-9-9','2.5','ddot','x');
+    isInSolution2(status, output);
+  }
+  if (input == 'questionTen') {
+    status = 'false';
+    status = checkAgainstFive(status, equation,'solution-10-1','R','g','m','ddot','y');
+    status = checkAgainstFour(status, equation,'solution-10-1','R','g','m','0');
+    status = checkAgainstThree(status, equation,'solution-10-2','R','g','m');
+    status = checkAgainstSeven(status, equation,'solution-10-3','T','g','m','sin','mu','R','x');
+    status = checkAgainstSix(status, equation,'solution-10-4','M','g','B','sin','V','x');
+    status = checkAgainstSeven(status, equation,'solution-10-5','M','g','B','sin','V','x','mu');
+    status = checkAgainstSix(status, equation,'solution-10-6','M+m','g','B','sin','V','x');
+    status = checkAgainstTwo(status, equation,'solution-10-7','4','x');
+    isInSolution2(status, output);
+  }
+  if (input == 'questionEleven') {
+    status = 'false';
+    status = checkAgainstThree(status, equation,'solution-11-1','P','F','v');
+    status = checkAgainstFour(status, equation,'solution-11-2','F','6','270','3');
+    status = checkAgainstThree(status, equation,'solution-11-3','A','B','V');
+    status = checkAgainstFive(status, equation,'solution-11-4','A','0.5','100','515','9.81');
+    status = checkAgainstTwo(status, equation,'solution-11-5','B','9');
+    status = checkAgainstFour(status, equation,'solution-11-6','F','m','a','A');
+    status = checkAgainstFour(status, equation,'solution-11-7','F','515','0.35','25');
+    isInSolution2(status, output);
+  }
+  if (input == 'questionTwelve') {
+    status = 'false';
+    status = checkAgainstFour(status, equation,'solution-12-1','m','F','D','x');
+    status = checkAgainstFour(status, equation,'solution-12-2','125','4.75','300','x');
+    status = checkAgainstTwo(status, equation,'solution-12-3','x','.4');
+    status = checkAgainstThree(status, equation,'solution-12-4','T','C','v');
+    status = checkAgainstThree(status, equation,'solution-12-4','125','C','v');
+    status = checkAgainstThree(status, equation,'solution-12-5','2','C','10');
+    status = checkAgainstFour(status, equation,'solution-12-6','2','3','10','200');
+    status = checkAgainstFour(status, equation,'solution-12-7','D','4','k','v');
+    status = checkAgainstTwo(status, equation,'solution-12-8','k','13');
+    status = checkAgainstSix(status, equation,'solution-12-9','C','v','4','B','m','a');
+    status = checkAgainstThree(status, equation,'solution-12-10','C','v','F');
+    status = checkAgainstSix(status, equation,'solution-12-10','C','v','m','g','k','v');
+    isInSolution2(status, output);
+  }
+  if (input == 'questionThirteen') {
+    status = 'false';
+    status = checkAgainstFive(status, equation,'solution-13-1','R','m','g','cos','y');
+    status = checkAgainstTwo(status, equation,'solution-13-2','R','142');
+    status = checkAgainstFive(status, equation,'solution-13-3','T','mu','sin','x','m');
+    status = checkAgainstTwo(status, equation,'solution-13-4','T','80');
+    status = checkAgainstFive(status, equation,'solution-13-5','R','N','m','g','cos');
+    status = checkAgainstTwo(status, equation,'solution-13-6','N','710');
+    status = checkAgainstEight(status, equation,'solution-13-7','R','mu','N','260','m','g','sin','q');
+    status = checkAgainstTwo(status, equation,'solution-13-8','q','4.5');
+    isInSolution2(status, output);
+  }
+
+}
+</script>
+
+</body>
